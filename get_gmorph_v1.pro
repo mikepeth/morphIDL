@@ -18,12 +18,16 @@
 ; J. Lotz 4/20/2006
 ;
 ;calls NASA astrolib functions
+
+;reads in 4 chunks for large ACS images
+;add maglim to morph.dat
 ;
 ;******************************************************************************
 ;******************************************************************************
 
-PRO get_gmorph_acs_v2, starti, sexcat, big_imfile, big_whtfile,big_segfile, outmorphs,big_xpix, big_ypix,im_psf,im_scale,zeropt,exptimefile, nchunk 
-
+;PRO get_gmorph_v1, starti, sexcat, big_imfile, big_whtfile,big_segfile, outmorphs,big_xpix, big_ypix,im_psf,im_scale,zeropt,exptimefile, nchunk, startchunk
+PRO get_gmorph_v1, starti, sexcat, big_imfile,big_segfile, outmorphs,big_xpix, big_ypix,im_psf,im_scale,zeropt,exptime
+  
 ;********************************************************
 ; read files, initalize parameters
 ;*******************************************************
@@ -49,14 +53,8 @@ G={ file:' ', npix:0, axc:0.0, ayc:0.0, mxc:0.0, myc:0.0, $
 ;sbig = size(big_im)
 ;if big_im eq !NULL or sbig[0] eq 0 then begin
 
-;; chunk=long(floor(big_ypix/4))
-;; big_ymax = long(nchunk)*chunk
-;; big_ymin = long(nchunk-1)*chunk
-
 big_im=mrdfits(big_imfile, 0)
 big_segmap=mrdfits(big_segfile, 0)
-
-;big_exp=mrdfits(exptimefile, 0, range=[big_ymin, big_ymax])
 ;endif
 
 
@@ -85,7 +83,8 @@ if (starti eq 0) then begin
 endif else begin
     iarray = where(id ge starti)
     i = iarray[0]
-    n = n_elements(id)-i
+    ;n = n_elements(iarray)
+    print, 'first galaxy is ', id[i], i, n
 endelse
 
 
@@ -153,7 +152,7 @@ while(i lt n) do begin
             xc2 = xc[i] - xmin2
         endif else begin
             if( xc[i] - dx - dim lt 0) then begin
-                xmin2 = 0.0
+                xmin2 = 0
                 xmax2 = 2*dx +2*dim
                 xc2 = xc[i] 
             endif else begin
@@ -164,13 +163,13 @@ while(i lt n) do begin
         endelse
 
         if (yc[i]+dy+dim gt big_ymax-1) then begin
-            ymax2 =  big_ymax - 1.0
+            ymax2 = big_ymax - 1.0
             ymin2 = big_ymax -1.0 - 2*dx - 2*dim 
             yc2 = yc[i] - ymin2
         endif else begin
             if( yc[i] - dy - dim lt big_ymin) then begin
                 ymin2 = big_ymin
-                ymax2 = 2*dy + 2*dim
+                ymax2 = big_ymin + 2*dy + 2*dim
                 yc2 = yc[i] - ymin2
             endif else begin
                 ymin2 = yc[i] - dim - dy 
@@ -190,8 +189,8 @@ while(i lt n) do begin
         
         sm_img = big_im[xmin2:xmax2, ymin2:ymax2]
         gal_seg = big_segmap[xmin2:xmax2, ymin2:ymax2] ;YEAH! removed long cast
-        gal_wht = big_wht[xmin2:xmax2,ymin2:ymax2]
-        gal_exp = big_exp[xmin2:xmax2, ymin2:ymax2]
+        ;gal_wht = big_wht[xmin2:xmax2,ymin2:ymax2]
+        ;gal_exp = big_exp[xmin2:xmax2, ymin2:ymax2]
         ;sm_img = sm_img * G.exptime   
         ;gal_wht = gal_wht/ G.exptime
 
@@ -355,13 +354,22 @@ while(i lt n) do begin
 
             galid = id[i]
             badpix = where(gal_seg gt 0. and (gal_seg lt galid-0.5 OR gal_seg gt galid+0.5))
+            goodseg = where(gal_seg gt galid-0.5 and gal_seg lt galid+0.5)
             gal_im = sm_img - G.bkgnd
             print, 'Masking ', N_ELEMENTS(badpix), ' pixels'
             print, id[i],  max(gal_seg), min(gal_seg)
             print, size(gal_seg)
             if (N_ELEMENTS(badpix) gt 1) then gal_im[badpix] = 0.0
-
             gal_im2 = frebin(gal_im, dw, dw)
+
+            ;****************
+            ;check magnitude
+            totmag = -2.5*alog10(total(gal_im(goodseg))) + zeropt
+            print, 'total mag ~' , totmag, ' total cnts ~ ', total(gal_im(goodseg)), ';  nseg = ', n_elements(goodseg)
+  
+            goodpix = checkpix(gal_exp)
+            print, "goodpix is ", goodpix
+
 
         ;********************************************************
         ; start interactive mode 
@@ -559,16 +567,17 @@ while(i lt n) do begin
         ;********************************************************
         ; end interactive mode 
         ;********************************************************
-            
+      
+
 
             fxhmake, hd1, gal_im
             fxwrite, galfile, hd1, gal_im
 
-            fxhmake, hd2, gal_wht
-            fxwrite, galwhtfile, hd2, gal_wht
+            ;; fxhmake, hd2, gal_wht
+            ;; fxwrite, galwhtfile, hd2, gal_wht
 
-            fxhmake, hd3, gal_exp
-            fxwrite, galexpfile, hd3, gal_exp
+            ;; fxhmake, hd3, gal_exp
+            ;; fxwrite, galexpfile, hd3, gal_exp
             
             fxhmake, hd3, gal_seg
             fxwrite, galseg1file, hd3, gal_seg
@@ -576,8 +585,12 @@ while(i lt n) do begin
             ;******************************************
             ; run dogalaxy.pro, main morphology routine
             ;********************************************* 
-            ;xx = fltarr(24)
-            xx = dogalaxy_mos(G)
+            xx = fltarr(32)
+
+
+            if (totmag le maglim and goodpix gt 0) then begin
+
+               xx = dogalaxy_mos(G)
                                 ;xx = [sn, rchalf, rehalf,
                                 ;rcpet,repet, ax, ay, mx, my, c, r20,
                                 ;r80, a, s, g, m20, flag, isoflux
@@ -588,47 +601,48 @@ while(i lt n) do begin
                                 ;flagseg, 
                                 ;n_elements(galmap),M,I,D,flux_pet_ell,a1,a2,nseg]
 
-            out[5:22] = xx[0:17]  ;selects [sn, r_half_c,  r_half_e,  r_cir,  r_ellip, G.axc, G.ayc, G.mxc, G.myc, cc, a[0], s, gg[0], alog10(mhi), flagseg, n_elements(galmap)]
+               out[5:22] = xx[0:17] ;selects [sn, r_half_c,  r_half_e,  r_cir,  r_ellip, G.axc, G.ayc, G.mxc, G.myc, cc, a[0], s, gg[0], alog10(mhi), flagseg, n_elements(galmap)]
+            endif
 
             ;*************************************
             ; get mag and surface brightnesses
             ;*************************************
 
-            out[22] = out[22]
-            flux = out[22]
-            rmax = out[9]
+               ;out[22] = out[22]
+               flux = out[22]
+               rmax = out[9]
 
-            if(flux ne -100.0 and xx[0] ne -99) then begin
-                newmag = -2.5*alog10(flux) + zeropt
+               if(flux ne -100.0 and xx[0] ne -99) then begin
+                  newmag = -2.5*alog10(flux) + zeropt
 
-                ;gal_im = gal_im/G.exptime
+                                ;gal_im = gal_im/G.exptime
 
-                mu_pet = getmu_pet(G, gal_im, rmax)
+                  mu_pet = getmu_pet(G, gal_im, rmax)
 
-                if (mu_pet gt -99) then begin
-                    mu_pet1 = -2.5*alog10(mu_pet/ G.scale/ G.scale) + zeropt
-                endif else begin
-                    mu_pet1 = mu_pet
-                endelse
+                  if (mu_pet gt -99) then begin
+                     mu_pet1 = -2.5*alog10(mu_pet/ G.scale/ G.scale) + zeropt
+                  endif else begin
+                     mu_pet1 = mu_pet
+                  endelse
             
                 
-                mu_apet = getmu_apet(G, gal_im, rmax)
-                if (mu_apet gt -99) then begin
-                    mu_apet1 = -2.5*alog10(mu_apet/ G.scale/ G.scale) + zeropt
-                endif else begin
-                    mu_apet1 = mu_apet
-                endelse
+                  mu_apet = getmu_apet(G, gal_im, rmax)
+                  if (mu_apet gt -99) then begin
+                     mu_apet1 = -2.5*alog10(mu_apet/ G.scale/ G.scale) + zeropt
+                  endif else begin
+                     mu_apet1 = mu_apet
+                  endelse
 
 
-                mu_iso = getmu(gal_im, gal_seg, id[i])
-                if (mu_iso gt -99) then begin
-                    mu_iso1 = -2.5*alog10(mu_iso/ G.scale / G.scale) + zeropt
-                endif else begin
-                    mu_iso1 = mu_iso
-                endelse
+                  mu_iso = getmu(gal_im, gal_seg, id[i])
+                  if (mu_iso gt -99) then begin
+                     mu_iso1 = -2.5*alog10(mu_iso/ G.scale / G.scale) + zeropt
+                  endif else begin
+                     mu_iso1 = mu_iso
+                  endelse
 
-           ; write output
-            endif else begin
+                                ; write output
+               endif else begin
                 ;mag = -99.0
                 mu_iso1 = -99.0
                 mu_pet1 = -99.0
@@ -678,11 +692,14 @@ while(i lt n) do begin
             printf, 3, out, format= fmt_out
 
            ; delete files
-            file_delete, galfile, /allow_nonexistent
-            file_delete, galwhtfile, /allow_nonexistent
-            file_delete, galsegfile, /allow_nonexistent
-            file_delete, galseg1file, /allow_nonexistent
-	    file_delete, galexpfile, /allow_nonexistent
+
+            if(totmag le maglim and goodpix gt 0) then begin
+               file_delete, galfile, /allow_nonexistent
+               ;file_delete, galwhtfile, /allow_nonexistent
+               file_delete, galsegfile, /allow_nonexistent
+               file_delete, galseg1file, /allow_nonexistent
+               ;file_delete, galexpfile, /allow_nonexistent
+            endif
 
 
 
