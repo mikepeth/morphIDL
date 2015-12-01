@@ -99,10 +99,10 @@ while(i lt n) do begin
 
     ; set galaxy file names
     galfile = 'gal'+ string(id[i], format='(I0)') + '.fits'
-    galwhtfile = 'gal'+ string(id[i], format='(I0)') + '_wht.fits'
+    ;galwhtfile = 'gal'+ string(id[i], format='(I0)') + '_wht.fits'
     galsegfile = 'gal'+ string(id[i], format='(I0)') + '_seg2.fits'
     galseg1file = 'gal'+ string(id[i], format='(I0)') + '_seg1.fits'
-    galexpfile = 'gal'+ string(id[i], format='(I0)') + '_exp.fits'
+    ;galexpfile = 'gal'+ string(id[i], format='(I0)') + '_exp.fits'
 
 
     ; set galaxy structure values

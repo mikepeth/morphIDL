@@ -26,14 +26,14 @@ FUNCTION DOGALAXY_MOS, G
 ;        checkmap.pro
 
 
-COMMON galaxy_block, galaxy_image, galaxy_wht, galaxy_npix, galaxy_skybox, galaxy_psf, galaxy_scale, galaxy_e, galaxy_pa, galaxy_exptime, galaxy_display
+COMMON galaxy_block, galaxy_image, galaxy_npix, galaxy_skybox, galaxy_psf, galaxy_scale, galaxy_e, galaxy_pa, galaxy_exptime, galaxy_display
 
 ;print, G.file
 ;xx = mrdfits("gal10.fits", 0)
 galaxy_image = mrdfits(G.file, 0)
 fileroot = strsplit(G.file, '.', /extract)
-galaxy_wht = fileroot[0] + '_wht.fits'
-galaxy_exp = fileroot[0] + '_exp.fits'
+;galaxy_wht = fileroot[0] + '_wht.fits'
+;galaxy_exp = fileroot[0] + '_exp.fits'
 
 galaxy_npix = G.npix
 galaxy_psf = G.psf
@@ -210,7 +210,7 @@ print, "Writing segfile..."
 writefits, segfile, seg 
 
 print, "Calculating S/N..."
-sn = s2n_wht2(galaxy_image, galaxy_wht, galaxy_exp, seg)
+sn = s2n_wht2(galaxy_image, galaxy_exptime, seg)
 print, 'S/N = ', sn, ' R_ell = ', r_ellip*G.scale
  
 galmap= where(seg gt 0)
