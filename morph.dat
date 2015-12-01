@@ -1,0 +1,31 @@
+;
+; this file defines the parameters needed to run
+; get_gmorph.pro
+;
+; J. Lotz  9/01/2005
+;
+
+
+interactive = 0 ; 0=no, 1= yes to run get_gmorph interactively
+display =  0  ; 0=no, 1=yes to display images while running get_gmorph
+
+
+maglim = 26.0
+;big_npix = 30720  ; number of pixels in x dir of input mosaic image
+;big_npix_y = 14000  ; number of pixels in y dir of input mosaic image
+;im_psf = 0.17      ; PSF FWHM in arcsec
+;im_scale = 0.06    ; arcsec/pixel for input image
+;zeropt = 26.25     ; EGS V 26.486  I 25.937  H 25.96  J 26.25
+;exptime = 85316.97  ; exptime needed for correct S/N
+                   ; if input image in cnt/s, set to exptime
+                   ; if input image in cnt, set to 1
+
+
+; change these only if necessary
+dim = 50           ; minimum dx for postage stamp image
+skyboxsize = 20    ; min skybox size = xx by xx pixels
+dw=300             ; window size
+
+immin = 5e-4 ;  min image display
+immax = 0.1 ;  max image display
+color= 25   ; color table 
