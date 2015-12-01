@@ -26,7 +26,7 @@
 ;******************************************************************************
 
 ;PRO get_gmorph_v1, starti, sexcat, big_imfile, big_whtfile,big_segfile, outmorphs,big_xpix, big_ypix,im_psf,im_scale,zeropt,exptimefile, nchunk, startchunk
-PRO get_gmorph_v1, sexcat, big_imfile,big_segfile, outmorphs,big_xpix, big_ypix,im_psf,im_scale,zeropt,exptime
+PRO get_gmorph_v1, sexcat, big_imfile,big_segfile, outmorphs,big_xpix, big_ypix,im_psf,im_scale,zeropt ;,exptime
   
 ;********************************************************
 ; read files, initalize parameters
@@ -38,30 +38,29 @@ PRO get_gmorph_v1, sexcat, big_imfile,big_segfile, outmorphs,big_xpix, big_ypix,
 display =0 
 
 ; read in SExtractor galaxy catalog
-;readcol, sexcat, wid, ra_w, dec_w, z_w,  id,  ra, dec, xc, yc, xmin,
-;xmax, ymin, ymax, ellip, pa,mag, mager, format='(I, F, F, F, F, F, F,
-;F, F, F, F, F, F)'
-
 readcol, sexcat,  id,  ra, dec, xc, yc, xmin, xmax, ymin, ymax, mag, mager, classstar,  pa, ellip, format='(l,f,f,f,f,i,i,i,i,f,f,f,f,f)'
+
+;Read in sky image and segmentation map
+big_im=mrdfits(big_imfile, 0,headerim)
+big_segmap=mrdfits(big_segfile, 0,headerseg)
+
+;Grab EXPTIME from sky image header
+exptime = fxpar(headerim,'EXPTIME')
+if exptime eq 0 then exptime = 1.0 ;Incase the FITS file doesn't have an EXPTIME
 
 ; define galaxy structure
 G={ file:' ', npix:0, axc:0.0, ayc:0.0, mxc:0.0, myc:0.0, $
     e:0.0, pa:0.0, psf:im_psf, scale:im_scale, bkgnd:0.0, $
-    skybox:[0.0,0.0,0.0,0.0], exptime:1.0, display:display }
+    skybox:[0.0,0.0,0.0,0.0], exptime:exptime, display:display }
 
-; read in images
-;sbig = size(big_im)
-;if big_im eq !NULL or sbig[0] eq 0 then begin
-
-big_im=mrdfits(big_imfile, 0)
-big_segmap=mrdfits(big_segfile, 0)
-;endif
+big_ymin = 0
+big_ymax = big_ypix
 
 
 ; open output file 
 fmt_out = '( I9,  F15.7, F15.7, F12.3, E12.4,  F12.2,  F12.2,  F12.2,  F12.2,  F12.2,  F12.3,  F12.3,  F12.3,  F12.3,  F12.2,  F12.2,  F12.2, F12.2,  F12.2,  F12.2,  F12.2,  I4,  E12.3, I4,  F12.3,  F12.3,  F12.3,  F12.3,  F12.3,  F12.3,  F12.3, E12.3,F12.3,F12.3,F12.3,F12.3,F12.3,F12.3,F12.3,F12.3,F12.3,F12.3)'
 
-openw, 3, outmorphs, /append
+openw, 3, outmorphs ;, /append
 catalog_header, 3 ;Use file number 3
 
 ;printf, 3, '# ID    RA  DEC   SExMAG   MAGER   <S/N>   R1/2_cir  R1/2_ell  Rpet_cir  Rpet_ell   AXC   AYC    MXC   MYC   C  r20 r80   A    S    G   M20   FLAG  NPIX  TYPE  MAG_ISO   MU_ISO   MU_PET   MU_APET M I D Flux_pet_ell a1 a2 nseg'
@@ -78,14 +77,15 @@ catalog_header, 3 ;Use file number 3
 n = N_ELEMENTS(id)
 ;n=starti+1
 
-if (starti eq 0) then begin
-    i = 0
-endif else begin
-    iarray = where(id ge starti)
-    i = iarray[0]
-    ;n = n_elements(iarray)
-    print, 'first galaxy is ', id[i], i, n
-endelse
+;if (starti eq 0) then begin
+i = 0
+
+;; endif else begin
+;;     iarray = where(id ge starti)
+;;     i = iarray[0]
+;;     ;n = n_elements(iarray)
+;;     print, 'first galaxy is ', id[i], i, n
+;; endelse
 
 
 while(i lt n) do begin
@@ -367,7 +367,7 @@ while(i lt n) do begin
             totmag = -2.5*alog10(total(gal_im(goodseg))) + zeropt
             print, 'total mag ~' , totmag, ' total cnts ~ ', total(gal_im(goodseg)), ';  nseg = ', n_elements(goodseg)
   
-            goodpix = checkpix(gal_exp)
+            goodpix = checkpix2(gal_im)
             print, "goodpix is ", goodpix
 
 
