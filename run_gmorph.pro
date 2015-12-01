@@ -8,12 +8,17 @@ zeropt = 24.4    ; EGS V 26.486  I 25.937  H 25.96  J 26.25
 
 location = '/astro/candels2/user/mikepeth/panstarrs/UGC/'
 
-get_gmorph_v1, location+'UGC00333_white_cold_fix.cat', $
-location+'UGC00333_white.fits', $
-location+'UGC00333_white_cold_seg.fits', $
-location+'test_00333.morph', $
-big_xpix, big_ypix,im_psf,im_scale,zeropt
+galFiles= file_search(location+'*white.fits')
+Ngals = size(galFiles,/DIMENSIONS)
 
-exit
-
+for img=0, Ngals[0]-1  do begin
+   baseName = strsplit(galFiles[img],'.',/EXTRACT)
+   print, baseName
+   get_gmorph_v1, basename[0]+'_cold_fix.cat', $
+                  galFiles[img], $
+                  basename[0]+'_cold_seg.fits', $
+                  basename[0]+'.morph', $
+                  big_xpix, big_ypix,im_psf,im_scale,zeropt
+endfor
+;exit
 END
