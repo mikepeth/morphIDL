@@ -26,7 +26,7 @@
 ;******************************************************************************
 
 ;PRO get_gmorph_v1, starti, sexcat, big_imfile, big_whtfile,big_segfile, outmorphs,big_xpix, big_ypix,im_psf,im_scale,zeropt,exptimefile, nchunk, startchunk
-PRO get_gmorph_v1, starti, sexcat, big_imfile,big_segfile, outmorphs,big_xpix, big_ypix,im_psf,im_scale,zeropt,exptime
+PRO get_gmorph_v1, sexcat, big_imfile,big_segfile, outmorphs,big_xpix, big_ypix,im_psf,im_scale,zeropt,exptime
   
 ;********************************************************
 ; read files, initalize parameters
