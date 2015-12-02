@@ -17,6 +17,10 @@ FUNCTION SEGMAP2, xcenter, ycenter, rpet
  psf = psf_gaussian( npixel=npix_psf, fwhm=fw, ndimen=2, /normal)
  cimg = convolve(r_img, psf)
 
+ ;Remove NaNs from cimg
+ cimg_nan = where(cimg eq !VALUES.F_NAN)
+ if (size(cimg_nan, /DIMENSIONS) gt 1) then  cimg[cimg_nan] = -9.0e9
+ 
  ; find surface brightness at petrosian radius
 
  dist_ellipse, ellip, galaxy_npix, xcenter, ycenter, galaxy_e, galaxy_pa 
