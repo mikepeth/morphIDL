@@ -14,7 +14,7 @@ Ngals = size(galFiles,/DIMENSIONS)
 for img=0, Ngals[0]-1  do begin
    baseName = strsplit(galFiles[img],'.',/EXTRACT)
    print, baseName
-   get_gmorph_v1, basename[0]+'_cold_fix.cat', $
+   get_gmorph_v1, basename[0]+'_cold_primary.cat', $
                   galFiles[img], $
                   basename[0]+'_cold_seg.fits', $
                   basename[0]+'.morph', $

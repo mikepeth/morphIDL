@@ -7,7 +7,7 @@ FUNCTION A_ABS_MIN2, G, r_e, plot
 
    COMMON galaxy_block
 
-   powell, p, xi, ftol, fmin, 'A_ABS2' 
+   powell, p, xi, ftol, fmin, 'A_ABS2', /DOUBLE, ITMAX=400
    print, 'xcenter, ycenter = ', p 
    print, 'Asym Gal (C+B) = ', fmin 
    asym = fmin
