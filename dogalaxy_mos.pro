@@ -167,11 +167,16 @@ endif
 
 print, r_cir, r_ellip
 if (r_ellip le 2) then r_ellip = r_cir
+if finite(r_ellip, /NAN) then begin
+   r_ellip = r_cir
+   print, "r_ellip is NaN"
+endif
 
 m = moment_min2(G, r_ellip, galaxy_display) 
 G.mxc = m[1] 
 G.myc = m[2]
 
+print, "Calculating Concentration..."
 cc = c_pet_cb_hres2(G, galaxy_display)
  
 if (r_cir lt 5*galaxy_psf/galaxy_scale) then begin 

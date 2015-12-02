@@ -7,8 +7,9 @@ FUNCTION MOMENT2, X
   n = long(galaxy_npix) *long(galaxy_npix)
   mom_t = 0.0 
 
-  if( xcenter gt 0 AND xcenter lt galaxy_npix AND ycenter gt 0 AND ycenter lt galaxy_npix) then begin
-
+;  if( xcenter gt 0 AND xcenter lt galaxy_npix AND ycenter gt 0 AND ycenter lt galaxy_npix) then begin
+  if( xcenter gt 0 AND xcenter+r_e lt galaxy_npix AND ycenter gt 0 AND ycenter+r_e lt galaxy_npix) then begin
+     
       map = segmap2(xcenter, ycenter, r_e) 
       gal = where(map gt 0.0, n2) 
 

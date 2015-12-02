@@ -6,7 +6,7 @@ FUNCTION MOMENT_MIN2, G, r_e, plot
 
    COMMON galaxy_block
 
-   powell, p, xi, ftol, fmin, 'MOMENT2' 
+   powell, p, xi, ftol, fmin, 'MOMENT2', /DOUBLE
    print, 'xcenter, ycenter = ', p 
    print, 'MOMENT_T = ', fmin 
 

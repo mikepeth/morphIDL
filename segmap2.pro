@@ -10,8 +10,8 @@ FUNCTION SEGMAP2, xcenter, ycenter, rpet
  if fw lt 3*galaxy_psf/galaxy_scale then fw = 3*galaxy_psf/galaxy_scale
  
  if (fw lt 1.0) then fw = 1.0
- if finite(fw,/NAN) then fw = 1.0
-  if finite(fw,/INFINITY) then fw = 1.0
+ if finite(fw,/NAN) then fw = 9e9
+ if finite(fw,/INFINITY) then fw = 9e9
  npix_psf = long(5.0 * fw)
 
  psf = psf_gaussian( npixel=npix_psf, fwhm=fw, ndimen=2, /normal)
@@ -43,15 +43,17 @@ FUNCTION SEGMAP2, xcenter, ycenter, rpet
 
      gal = where(cimg2 gt 0.0, ngal)
 
-
-     while ngal lt 2 do begin
-         mu = 2*mu
-         cimg2 = cimg
-         sky= where(cimg lt mu, nsky)
-         if nsky ne 0 then cimg2(sky) = 0.0
-         gal = where(cimg2 gt 0.0, ngal)
-     endwhile
-
+     if ngal gt 0 then begin
+        while ngal lt 2 do begin
+           ;print, ngal
+           mu = 2*mu
+           cimg2 = cimg
+           sky= where(cimg lt mu, nsky)
+           if nsky ne 0 then cimg2(sky) = 0.0
+           gal = where(cimg2 gt 0.0, ngal)
+        endwhile
+     endif
+     
      cimg2(gal) = 10.0
 
                                 ; remove outlying pixels
