@@ -94,7 +94,7 @@ while(i lt n) do begin
     ; initalize galaxy parameters
     ;**************************************
 
-   baseName = strsplit(big_imfile,"UGC00",/EXTRACT,/REGEX)
+   baseName = strsplit(big_imfile,"UGC",/EXTRACT,/REGEX)
    bb = baseName[2]
    ugcID = strsplit(bb,'_',/EXTRACT)
    uid = ugcID[0]
