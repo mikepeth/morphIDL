@@ -44,6 +44,11 @@ readcol, sexcat,  id,  ra, dec, xc, yc, xmin, xmax, ymin, ymax, mag, mager, clas
 big_im=mrdfits(big_imfile, 0,headerim)
 big_segmap=mrdfits(big_segfile, 0,headerseg)
 
+;Remove NaNs from sky image
+im_nan = where(big_im eq !VALUES.F_NAN)
+if (size(im_nan, /DIMENSIONS) gt 1) then big_im[im_nan] = -99
+
+
 ;Grab EXPTIME from sky image header
 exptime = fxpar(headerim,'EXPTIME')
 if exptime eq 0 then exptime = 1.0 ;Incase the FITS file doesn't have an EXPTIME
