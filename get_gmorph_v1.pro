@@ -94,14 +94,23 @@ while(i lt n) do begin
     ; initalize galaxy parameters
     ;**************************************
 
-    print, 'starting galaxy ', id[i]
+   baseName = strsplit(big_imfile,"UGC00",/EXTRACT)
+   bb = baseName[2]
+   ugcID = strsplit(bb,'_',/EXTRACT)
+   uid = ugcID[0]
+   
+    print, 'starting galaxy ', uid
 
 
     ; set galaxy file names
-    galfile = 'gal'+ string(id[i], format='(I0)') + '.fits'
+    
+    ;galfile = 'UGC_gal'+ string(id[i], format='(I0)') + '.fits'
+    ;galsegfile = 'UGC_gal'+ string(id[i], format='(I0)') + '_seg2.fits'
+    ;galseg1file = 'UGC_gal'+ string(id[i], format='(I0)') + '_seg1.fits'
+    galfile = 'UGC_gal'+ string(uid, format='(I0)') + '.fits'
+    galsegfile = 'UGC_gal'+ string(uid, format='(I0)') + '_seg2.fits'
+    galseg1file = 'UGC_gal'+ string(uid, format='(I0)') + '_seg1.fits'
     ;galwhtfile = 'gal'+ string(id[i], format='(I0)') + '_wht.fits'
-    galsegfile = 'gal'+ string(id[i], format='(I0)') + '_seg2.fits'
-    galseg1file = 'gal'+ string(id[i], format='(I0)') + '_seg1.fits'
     ;galexpfile = 'gal'+ string(id[i], format='(I0)') + '_exp.fits'
 
 
@@ -693,13 +702,13 @@ while(i lt n) do begin
 
            ; delete files
 
-            if(totmag le maglim and goodpix gt 0) then begin
-               file_delete, galfile, /allow_nonexistent
+            ;if(totmag le maglim and goodpix gt 0) then begin
+            ;   file_delete, galfile, /allow_nonexistent
                ;file_delete, galwhtfile, /allow_nonexistent
-               file_delete, galsegfile, /allow_nonexistent
-               file_delete, galseg1file, /allow_nonexistent
+            ;   file_delete, galsegfile, /allow_nonexistent
+            ;   file_delete, galseg1file, /allow_nonexistent
                ;file_delete, galexpfile, /allow_nonexistent
-            endif
+            ;endif
 
 
 
