@@ -46,6 +46,7 @@ big_segmap=mrdfits(big_segfile, 0,headerseg)
 
 ;Remove NaNs from sky image
 im_nan = where(finite(big_im, /NAN) eq 1)
+if (size(im_nan, /DIMENSIONS) gt 1) then big_im[im_nan] = -99
 
 seg_nan = where(finite(big_segmap, /NAN) eq 1)
 if (size(seg_nan, /DIMENSIONS) gt 1) then big_segmap[seg_nan] = -99

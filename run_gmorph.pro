@@ -8,7 +8,7 @@ zeropt = 24.4    ; EGS V 26.486  I 25.937  H 25.96  J 26.25
 
 location = '/astro/candels2/user/mikepeth/panstarrs/UGC/'
 
-galFiles= file_search(location+'*white.fits')
+galFiles= file_search(location+'*385*white.fits')
 Ngals = size(galFiles,/DIMENSIONS)
 
 for img=0, Ngals[0]-1  do begin
@@ -22,3 +22,6 @@ for img=0, Ngals[0]-1  do begin
 endfor
 ;exit
 END
+
+; Galaxy 389 near edge of image. so it fails with this error:
+; ROBUST_SIGMA: This distribution is TOO WEIRD! Returning -1

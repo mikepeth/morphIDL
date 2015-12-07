@@ -51,6 +51,7 @@ cimg_nan = where(finite(cimg, /NAN) eq 1)
      if nsky ne 0 then cimg2(sky) = 0.0
 
      gal = where(cimg2 gt 0.0, ngal)
+     ;print,ngal
 
      if ngal gt 0 then begin
         while ngal lt 2 do begin
@@ -78,10 +79,10 @@ cimg_nan = where(finite(cimg, /NAN) eq 1)
 
  ; force segmap to be continguous
  segmap1[long(xcenter), long(ycenter)] = 10.0
- ;region = search2d(segmap1, long(xcenter), long(ycenter), 9.9, 10.1,  /diagonal)
+ region = search2d(segmap1, long(xcenter), long(ycenter), 9.9, 10.1,  /diagonal)
  segmapb = segmap1
- ;segmapb[*,*] = 0.0
- ;segmapb(region) = 10.0
+ segmapb[*,*] = 0.0
+ segmapb(region) = 10.0
 
  return, segmapb
 
