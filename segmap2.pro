@@ -17,12 +17,17 @@ FUNCTION SEGMAP2, xcenter, ycenter, rpet
  psf = psf_gaussian( npixel=npix_psf, fwhm=fw, ndimen=2, /normal)
 
  ;Remove NaNs from r_img
- rimg_nan = where(r_img eq !VALUES.F_NAN)
- if (size(rimg_nan, /DIMENSIONS) gt 1) then  r_img[rimg_nan] = -99
+rimg_nan = where(finite(galaxy_image, /NAN) eq 1)
+; print, rimg_nan
+ if (size(rimg_nan, /DIMENSIONS) gt 1) then begin
+    r_img[rimg_nan] = -99
+    print, "Removing NaN"
+ endif
+ 
  cimg = convolve(r_img, psf)
 
  ;Remove NaNs from cimg
- cimg_nan = where(cimg eq !VALUES.F_NAN)
+cimg_nan = where(finite(cimg, /NAN) eq 1)
  if (size(cimg_nan, /DIMENSIONS) gt 1) then  cimg[cimg_nan] = -99
  
  ; find surface brightness at petrosian radius

@@ -31,6 +31,11 @@ COMMON galaxy_block, galaxy_image, galaxy_npix, galaxy_skybox, galaxy_psf, galax
 ;print, G.file
 ;xx = mrdfits("gal10.fits", 0)
 galaxy_image = mrdfits(G.file, 0)
+print, G.file
+;Remove NaNs
+rimg_nan = where(finite(galaxy_image, /NAN) eq 1)
+if (size(rimg_nan, /DIMENSIONS) gt 1) then  galaxy_image[rimg_nan] = -99
+
 fileroot = strsplit(G.file, '.', /extract)
 ;galaxy_wht = fileroot[0] + '_wht.fits'
 ;galaxy_exp = fileroot[0] + '_exp.fits'

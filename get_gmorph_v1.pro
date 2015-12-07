@@ -45,9 +45,10 @@ big_im=mrdfits(big_imfile, 0,headerim)
 big_segmap=mrdfits(big_segfile, 0,headerseg)
 
 ;Remove NaNs from sky image
-im_nan = where(big_im eq !VALUES.F_NAN)
-if (size(im_nan, /DIMENSIONS) gt 1) then big_im[im_nan] = -99
+im_nan = where(finite(big_im, /NAN) eq 1)
 
+seg_nan = where(finite(big_segmap, /NAN) eq 1)
+if (size(seg_nan, /DIMENSIONS) gt 1) then big_segmap[seg_nan] = -99
 
 ;Grab EXPTIME from sky image header
 exptime = fxpar(headerim,'EXPTIME')
@@ -112,7 +113,7 @@ while(i lt n) do begin
     ;galfile = 'UGC_gal'+ string(id[i], format='(I0)') + '.fits'
     ;galsegfile = 'UGC_gal'+ string(id[i], format='(I0)') + '_seg2.fits'
     ;galseg1file = 'UGC_gal'+ string(id[i], format='(I0)') + '_seg1.fits'
-    galfile = 'UGC_gal'+ string(uid, format='(I0)') + '.fits'
+    galfile = 'UGC_gal'+ string(uid, format='(I0)') + '_sky.fits'
     galsegfile = 'UGC_gal'+ string(uid, format='(I0)') + '_seg2.fits'
     galseg1file = 'UGC_gal'+ string(uid, format='(I0)') + '_seg1.fits'
     ;galwhtfile = 'gal'+ string(id[i], format='(I0)') + '_wht.fits'
