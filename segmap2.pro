@@ -24,7 +24,9 @@ rimg_nan = where(finite(galaxy_image, /NAN) eq 1)
     print, "Removing NaN"
  endif
  
+
  cimg = convolve(r_img, psf)
+ ;print, size(cimg)
 
  ;Remove NaNs from cimg
 cimg_nan = where(finite(cimg, /NAN) eq 1)
@@ -64,7 +66,7 @@ cimg_nan = where(finite(cimg, /NAN) eq 1)
         endwhile
      endif
      
-     cimg2(gal) = 10.0
+     cimg2[gal] = 10.0
 
                                 ; remove outlying pixels
      seg = 10
@@ -78,6 +80,7 @@ cimg_nan = where(finite(cimg, /NAN) eq 1)
 
 
  ; force segmap to be continguous
+; print, size(segmap1)
  segmap1[long(xcenter), long(ycenter)] = 10.0
  region = search2d(segmap1, long(xcenter), long(ycenter), 9.9, 10.1,  /diagonal)
  segmapb = segmap1
