@@ -117,7 +117,7 @@ while(i lt n) do begin
 
     ; set galaxy structure values
     G.file = big_imfile ;galfile
-    ;G.exptime = exptime G.exptime = 1
+    ;G.exptime = exptime ;G.exptime = 1
     G.display = display
 
     if (ellip[i] lt 1.0) then begin
