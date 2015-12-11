@@ -11,13 +11,14 @@ location = '/user/mikepeth/manga/'
 galFiles= file_search(location+'*white.fits')
 Ngals = size(galFiles,/DIMENSIONS)
 
-for img=0, Ngals[0]-1  do begin
+for img=0, Ngals[0]-1300  do begin
    baseName = strsplit(galFiles[img],'.',/EXTRACT)
-   print, baseName
+   gband = baseName[0].Remove(-5) ;Removes 'white' from the filename
    get_gmorph_manga, basename[0]+'_cold_primary.cat', $
-                  galFiles[img], $
+                  ;galFiles[img], $
+                  gband+'g.00000.fits', $
                   basename[0]+'_cold_seg.fits', $
-                  basename[0]+'.morph', $
+   	              basename[0]+'_gband.morph', $
                   big_xpix, big_ypix,im_psf,im_scale,zeropt
 endfor
 ;exit

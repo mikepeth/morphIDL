@@ -704,10 +704,10 @@ while(i lt n) do begin
            ; delete files
 
             ;if(totmag le maglim and goodpix gt 0) then begin
-            ;   file_delete, galfile, /allow_nonexistent
+               file_delete, galfile, /allow_nonexistent
                ;file_delete, galwhtfile, /allow_nonexistent
-            ;   file_delete, galsegfile, /allow_nonexistent
-            ;   file_delete, galseg1file, /allow_nonexistent
+               file_delete, galsegfile, /allow_nonexistent
+               file_delete, galseg1file, /allow_nonexistent
                ;file_delete, galexpfile, /allow_nonexistent
             ;endif
 
