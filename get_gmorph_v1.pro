@@ -117,7 +117,7 @@ while(i lt n) do begin
     galfile = 'UGC_gal'+ string(uid, format='(I0)') + '_sky.fits'
     galsegfile = 'UGC_gal'+ string(uid, format='(I0)') + '_seg2.fits'
     galseg1file = 'UGC_gal'+ string(uid, format='(I0)') + '_seg1.fits'
-    ;galwhtfile = 'gal'+ string(id[i], format='(I0)') + '_wht.fits'
+    galwhtfile = 'gal'+ string(id[i], format='(I0)') + '_wht.fits'
     ;galexpfile = 'gal'+ string(id[i], format='(I0)') + '_exp.fits'
 
 

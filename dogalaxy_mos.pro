@@ -36,8 +36,12 @@ print, G.file
 rimg_nan = where(finite(galaxy_image, /NAN) eq 1)
 if (size(rimg_nan, /DIMENSIONS) gt 1) then  galaxy_image[rimg_nan] = -99
 
-fileroot = strsplit(G.file, '.', /extract)
-;galaxy_wht = fileroot[0] + '_wht.fits'
+fileroot = strsplit(G.file, '_', /extract)
+;print, fileroot
+;galaxy_wht = fileroot[0] + '.'+fileroot[1]+'.wt.fits'
+galaxy_wht = fileroot[0]+'_wht.fits'
+print, galaxy_wht
+galaxy_wht_image = mrdfits(galaxy_wht, 0)
 ;galaxy_exp = fileroot[0] + '_exp.fits'
 
 galaxy_npix = G.npix
@@ -49,9 +53,10 @@ galaxy_skybox = G.skybox
 galaxy_exptime = G.exptime
 galaxy_display = G.display
 
-root = strsplit(G.file, '.', /extract) ;
-segfile = strjoin(root, '_seg2.')
-mid_segfile = strjoin(root, '_MID_seg.')
+root = strsplit(G.file, '_', /extract) ;
+;print, root
+segfile = root[0]+'_seg2.fits'
+;mid_segfile = strjoin(root, '_MID_seg.')
 
 ; display galaxy image
 if (galaxy_display eq 1) then begin
@@ -91,21 +96,6 @@ if (galaxy_display eq 1) then begin
     contour, cir,  xstyle=1, xrange=[0, G.npix], $
       ystyle=1, yrange=[0, G.npix], thick=2, color=224, /noerase, /nodata 
 endif        
-
-
-;start morph analysis
-
-; check that galaxy has flux in pixels
-; kill if >10% of segmap pixel have 0 exptime
-;goodpix = checkpix(galaxy_exp)
-
-;print, "goodpix is ", goodpix
-
-;if goodpix eq 0 then begin
-;   print, "bad expmap ", galaxy_exp, ";  skipping galaxy "
-
-;   xx =[-99, -99,  -99,  -99,  -99, -99, -99, -99, -99, -99, -99, -99, -99, -99, -99, -99 , -99, -99, -99, -99, -99, -99, -99, -99, -99, -99, ;-99, -99, -99, -99, -99, -99] 
-;endif else begin
  
 print, "getting morphologies for galaxy "
 
@@ -181,6 +171,8 @@ m = moment_min2(G, r_ellip, galaxy_display)
 G.mxc = m[1] 
 G.myc = m[2]
 
+print, G.mxc, G.myc
+
 print, "Calculating Concentration..."
 cc = c_pet_cb_hres2(G, galaxy_display)
  
@@ -217,10 +209,11 @@ endelse
 print, "Calculating segmap..."
 seg = segmap2(G.mxc, G.myc, r_ellip) 
 print, "Writing segfile..."
+print, segfile
 writefits, segfile, seg 
 
 print, "Calculating S/N..."
-sn = s2n_wht2(galaxy_image, galaxy_exptime, seg)
+sn = s2n_wht2(galaxy_image, galaxy_wht_image,galaxy_exptime, seg)
 print, 'S/N = ', sn, ' R_ell = ', r_ellip*G.scale
  
 galmap= where(seg gt 0)
@@ -239,7 +232,7 @@ flagseg = checkmap(seg, G.mxc, G.myc)
 ; compute the segmentation map based on algorith of Freeman et al. (section 4.3)
 mid_seg = gen_segmap(galaxy_image,ETA=0.2,THRLEV=10)   ; default parameters set here
 
-print, "Writing MID segfile..."
+;print, "Writing MID segfile..."
 ;writefits, mid_segfile, mid_seg
 
 ; create segmentation-masked image

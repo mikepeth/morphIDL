@@ -1,9 +1,9 @@
-FUNCTION S2N_WHT2, img, expfiletime, map
+FUNCTION S2N_WHT2, img, wht2, expfiletime, map
  ; this function find the average signal per pixel / noise for galaxy
  ; within the petrosian radius using segmap
 
  ; get wht map
- ; wht2 = mrdfits(whtfile,0)
+ ;wht2 = mrdfits(whtfile,0)
 
   exp = expfiletime
   ; if file_test(expfile) eq 1 then exp = mrdfits(expfile,0)
@@ -19,8 +19,8 @@ FUNCTION S2N_WHT2, img, expfiletime, map
 
  img2(zero) = 0.0
 
-                                ;s2n= total( img2(ap)/sqrt(1/wht2(ap) + img2(ap)))/nn
- s2n= total(img2(ap))/nn
+ s2n= total( img2[ap]/sqrt(1/wht2[ap] + img2[ap]))/nn
+ ;s2n= total(img2(ap))/nn
 
  ;print, median(1/wht2(ap)), s2n, nn
 

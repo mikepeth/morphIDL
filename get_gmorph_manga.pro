@@ -25,8 +25,9 @@
 ;******************************************************************************
 ;******************************************************************************
 
-PRO get_gmorph_manga, sexcat, big_imfile,big_segfile, outmorphs,big_xpix, big_ypix,im_psf,im_scale,zeropt ;,exptime
-  
+PRO get_gmorph_manga, sexcat, big_imfile, big_whtfile, big_segfile, outmorphs,big_xpix, big_ypix,im_psf,im_scale,zeropt ;,exptime
+
+directory_loc = '/user/mikepeth/manga/'
 ;********************************************************
 ; read files, initalize parameters
 ;*******************************************************
@@ -41,6 +42,7 @@ readcol, sexcat,  id,  ra, dec, xc, yc, xmin, xmax, ymin, ymax, mag, mager, clas
 
 ;Read in sky image and segmentation map
 big_im=mrdfits(big_imfile, 0,headerim)
+big_wht=mrdfits(big_whtfile, 0,headerwht)
 big_segmap=mrdfits(big_segfile, 0,headerseg)
 
 ;Remove NaNs from sky image
@@ -104,19 +106,22 @@ while(i lt n) do begin
    bb = baseName[1]
    ugcID = strsplit(bb,'_',/EXTRACT)
    uid = ugcID[0]
+   print, ugcID
    
     print, 'starting galaxy ', uid
 
 
     ; set galaxy file names
     
-    galfile = 'manga_gal'+ string(uid, format='(I0)') + '_sky.fits'
-    galsegfile = 'manga_gal'+ string(uid, format='(I0)') + '_seg2.fits'
-    galseg1file = 'manga_gal'+ string(uid, format='(I0)') + '_seg1.fits'
+    galfile = 'manga'+ string(uid) + '_sky.fits'
+    galwhtfile = 'manga'+ string(uid) + '_wht.fits'
+    galsegfile = 'manga'+ string(uid) + '_seg2.fits'
+    galseg1file = 'manga'+ string(uid) + '_seg1.fits'
 
 
     ; set galaxy structure values
-    G.file = big_imfile ;galfile
+    ;G.file = big_imfile ;galfile
+    G.file = galfile
     ;G.exptime = exptime ;G.exptime = 1
     G.display = display
 
@@ -199,7 +204,7 @@ while(i lt n) do begin
         
         sm_img = big_im[xmin2:xmax2, ymin2:ymax2]
         gal_seg = big_segmap[xmin2:xmax2, ymin2:ymax2] ;YEAH! removed long cast
-        ;gal_wht = big_wht[xmin2:xmax2,ymin2:ymax2]
+        gal_wht = big_wht[xmin2:xmax2,ymin2:ymax2]
         ;gal_exp = big_exp[xmin2:xmax2, ymin2:ymax2]
         ;sm_img = sm_img * G.exptime   
         ;gal_wht = gal_wht/ G.exptime
@@ -583,8 +588,8 @@ while(i lt n) do begin
             fxhmake, hd1, gal_im
             fxwrite, galfile, hd1, gal_im
 
-            ;; fxhmake, hd2, gal_wht
-            ;; fxwrite, galwhtfile, hd2, gal_wht
+            fxhmake, hd2, gal_wht
+            fxwrite, galwhtfile, hd2, gal_wht
 
             ;; fxhmake, hd3, gal_exp
             ;; fxwrite, galexpfile, hd3, gal_exp
@@ -703,12 +708,19 @@ while(i lt n) do begin
 
            ; delete files
 
-            ;if(totmag le maglim and goodpix gt 0) then begin
-               file_delete, galfile, /allow_nonexistent
-               ;file_delete, galwhtfile, /allow_nonexistent
-               file_delete, galsegfile, /allow_nonexistent
-               file_delete, galseg1file, /allow_nonexistent
-               ;file_delete, galexpfile, /allow_nonexistent
+           file_copy, galfile, directory_loc+galfile, /overwrite
+           file_copy, galwhtfile, directory_loc+galwhtfile, /overwrite
+           file_copy, galsegfile, directory_loc+galsegfile, /overwrite
+           file_copy, galseg1file, directory_loc+galseg1file, /overwrite
+            
+           file_delete, galfile, /allow_nonexistent
+           file_delete, galwhtfile, /allow_nonexistent
+           file_delete, galsegfile, /allow_nonexistent
+           file_delete, galseg1file, /allow_nonexistent
+           
+           ;file_delete, galexpfile, /allow_nonexistent
+
+           ;if(totmag le maglim and goodpix gt 0) then begin
             ;endif
 
 
