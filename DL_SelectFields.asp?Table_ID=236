@@ -1,0 +1,1353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>RITA | BTS | Transtats</title>
+<!-- **********************************************************************************************************************-->
+<!-- ***** start your server side include here for the header to include things that should not be modified *****-->
+<!-- ***** the server side include SHOULD NOT BE MODIFIED -->
+<!-- ***** only the LEFT NAVIGATION CAN BE MODIFIED TO SUIT YOUR WEB STRUCTURE and the new ssi can be renamed accordingly -->
+<!-- **********************************************************************************************************************-->
+
+<meta name="robots" content="index,nofollow">
+<meta name="description" content="This is the TranStats homepage. TranStats provides one-stop shopping for intermodal transportation data for researchers, decision-makers, as well as the general public interested in transportation issues.">
+<script  src="lib/ITDBfunc.js" language="JavaScript" type="text/javascript"></script>
+<script language="JavaScript">
+if (!document.getElementById)
+{
+	location.href ="UpdateBrowser.asp";
+}
+</script>
+
+<script type="text/javascript" src="lib/topNavBar.js"></script>
+<script type="text/javascript" src="lib/no_ms.js"></script>
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="styles/global.css" REL="stylesheet" TYPE="text/css"/>
+<link rel="stylesheet" type="text/css" href="styles/local_Top_nav_main.css" />
+<link rel="stylesheet" type="text/css" href="styles/rita_main.css" />
+<link rel="stylesheet" type="text/css" href="styles/headerFooter.css" />
+
+<script type="text/javascript" src="js/dot_analytics.js"></script>
+
+</head>
+
+<body
+onLoad="MM_preloadImages('images/left_nav_button_its_on.jpg','images/left_nav_button_ntl_on.jpg','images/left_nav_button_rdt_on.jpg','images/left_nav_button_tsi_on.jpg','images/left_nav_button_utc_on.jpg','images/left_nav_button_volpe_on.jpg')">
+<!-- start of main table hosting everything -->
+
+<div id="majorContainer">
+<div id="outerContainer">
+ 
+  <!-- start header -->
+
+  <div id="header-layout-type" class="header-layout">
+    <div id="layout-type-1">
+      <div id="header">
+        <!-- dot top banner -->
+
+        <div id="dotTopBanner">
+          <div id="dotTop">
+            <a href="http://www.dot.gov/"><img id="header-dot-logo" alt=
+            "U.S. Department of Transportation (US DOT)" src="images/dot_logo_top.gif" width=
+            "402" height="26" name="header-dot-logo" /></a>
+          </div>
+
+          <div id="dotTopLinks">
+            <a href="http://www.dot.gov/about">About DOT</a> <span id=
+            "dotTopLinksSeparator1">|</span> <a href=
+            "http://www.dot.gov/briefingroom">Briefing Room</a> <span id=
+            "dotTopLinksSeparator2">|</span> <a href=
+            "http://www.dot.gov/our-activities">Our Activities</a>
+          </div>
+        </div><!-- end of dot top banner -->
+
+        <div id="header-wrapper">
+          <div id="logo-wrapper">
+            <div class="logo">
+              <a title="Bureau of Transportation Statistics" href=
+              "http://www.rita.dot.gov/bts/"><img alt=
+              "Bureau of Transportation Statistics" src="images/bts_logo.png" /></a>
+            </div>
+          </div><!-- end logo wrapper -->
+          <!-- rita links region -->
+
+          <div id="rita-links">
+            <div class="region region-rita-links">
+              <div id="block-block-13" class="block block-block">
+                <div class="content">
+                  <div>
+                    <img style="FLOAT: left" alt=
+                    "Office of the Assistant Secretary for Research and Technology" src=
+                    "images/rita_home_link.gif" width="440" height="25" usemap="#Map" /><map id=
+                    "Map" name="Map">
+                      <area href="http://www.rita.dot.gov/" shape="rect" alt=
+                      "Office of the Assistant Secretary for Research and Technology"
+                      coords="0,0,440,25" />
+                    </map><a href="http://www.rita.dot.gov/about_rita">About OST-R</a> |
+                    <a href="http://www.rita.dot.gov/press_room">Press Room</a> |
+                    <a href="http://www.rita.dot.gov/offices">Programs</a> | <a href=
+                    "http://www.rita.dot.gov/publications">OST-R Publications</a> |
+                    <a href="http://ntl.bts.gov/">Library</a> | <a href=
+                    "http://www.rita.dot.gov/contacts">Contact Us</a>
+                  </div>
+                </div><!-- end block content -->
+              </div><!-- end block -->
+            </div>
+          </div><!-- end rita links region -->
+          <!-- OSTR Search Integration -->
+
+          <div id="search-box">
+            <div class="region region-search-box">
+              <div id="block-search-form" class="block block-search">
+                <div class="content">
+                  <!-- OSTR Search Integration: Change the action URL -->
+
+                  <form action="http://www.rita.dot.gov/bts/search/google/" id=
+                  "cse-search-box" name="cse-search-box">
+                    <a id="search" name="search"></a>
+
+                    <div>
+                      <input type="hidden" name="cx" value=
+                      "008370246888531060023:gwfrxpqlksk" /> <input type="hidden" name=
+                      "cof" value="FORID:11" /> <input type="hidden" name="ie" value=
+                      "UTF-8" /> <input type="text" name="keys" size="20" title=
+                      "Type your search here" style="" class="text" /> <input type=
+                      "submit" name="sa" value="Search" />
+                    </div>
+                  </form><script type="text/javascript" src=
+                  "http//www.google.com/cse/brand?form=cse-search-box&amp;lang=en">
+</script> <!-- end block content -->
+                </div><!-- end block -->
+              </div>
+            </div><!-- /search-box -->
+          </div><!-- end header-wrapper -->
+        </div>
+      </div>
+    </div>
+  </div><!-- end header -->
+  
+
+<div id="mainContentContainer">
+ 
+<div id="topnav">
+  <div class="topNavBarRita">
+    <div class="topNavigationLocalGreen">
+ 
+    <ul id="local1">
+         <li><a href="http://www.bts.gov/about/">About BTS</a>
+           <ul>
+            <li><a href="http://www.bts.gov/programs/advisory_council_on_transportation_statistics/">Advisory Council on Transportation Statistics</a></li>
+            <li><a href="http://www.bts.gov/about/bts_jobs_and_internships.html">BTS Job Vacancies and Internships</a></li>
+			<li><a href="http://www.bts.gov/programs/confidentiality_policy/">Confidentiality Policy</a></li>
+            <li><a href="http://www.rita.dot.gov/events/">Events</a></li>
+            <li><a href="http://www.bts.gov/laws_and_regulations/">Laws and Regulations</a></li>
+            <li><a href="http://www.bts.gov/about/org_chart.html">Organizational Chart</a></li>
+            <li><a href="http://www.bts.gov/publications/significant_accomplishments/2009/">Results</a></li>
+            <li><a href="http://www.bts.gov/programs/statistical_policy_and_research/">Statistical Policy and Research</a></li>
+           </ul></li>
+       </ul>
+    </div>
+    <div class="topNavigationLocalGreen">
+      <ul id="local2">
+        <li><a href="http://www.bts.gov/press_room/">BTS Press Room</a>
+          <ul>
+            <li><a href="http://www.bts.gov/press_releases/">Press Releases</a></li>
+            <li><a href="http://www.bts.gov/upcoming_data_releases/">Upcoming Press Releases</a></li>
+            <li><a href="http://www.bts.gov/whatsnew/">What's New</a></li>
+          </ul></li>
+      </ul>
+    </div>
+    <div class="topNavigationLocalGreen">
+      <ul id="local3">
+        <li><a href="http://www.bts.gov/data_and_statistics/">Data and Statistics</a>
+          <ul>
+            <li><a href="http://www.bts.gov/xml/air_traffic/src/index.xml#CustomizeTable">Airline Traffic Data</a></li>
+            <li><a href="http://www.bts.gov/xml/atpi/src/index.xml">Air Fares Data</a></li>
+            <li><a href="http://www.bts.gov/xml/ontimesummarystatistics/src/index.xml">Airline On-Time Data</a></li>
+            <li><a href="http://www.bts.gov/programs/international/transborder/TBDR_BC/TBDR_BC_Index.html">Border Crossing/Entry Data</a></li>
+            <li><a href="http://www.bts.gov/publications/commodity_flow_survey/">Commodity Flow Survey</a></li>
+            <li><a href="http://www.bts.gov/programs/freight_transportation/">Freight Data and Statistics</a></li>
+            <li><a href="http://www.transtats.bts.gov/DatabaseInfo.asp?DB_ID=640&amp;Link=0">Intermodal Passenger Connectivity Database</a></li>
+            <li><a href="http://www.bts.gov/data_and_statistics/international_data/index.html">International Data</a></li>
+            <li><a href="http://www.bts.gov/programs/ncfo/">National Census of Ferry Operators</a></li>
+            <li><a href="http://www.bts.gov/programs/international/transborder/TBDR_QA.html">North American Transborder Freight</a></li>
+            <li><a href="http://www.transtats.bts.gov/">TranStats</a></li>
+            <li><a href="http://www.bts.gov/data_and_statistics/">Other Data and Statistics</a></li>
+          </ul></li>
+      </ul>
+    </div>
+    <div class="topNavigationLocalGreen">
+      <ul id="local4">
+        <li><a href="http://www.bts.gov/publications/">Publications</a>
+          <ul>
+            <li><a href="http://www.bts.gov/pdc/index.xml">Order a Print Publication</a></li>
+            <li><a href="http://www.bts.gov/pdc/user/products/src/category.xml?pdc_start=1&pdc_end=15&pdc_page=1&c=1&pdc_sort=2+DESC%2C+4+DESC">Aviation and Airline Reports</a></li>
+            <li><a href="http://ntl.bts.gov/">National Transportation Library (NTL)</a></li>
+            <li><a href="http://www.bts.gov/publications/research_papers/">Research Papers</a></li>
+            <li><a href="http://www.bts.gov/publications/special_reports_and_issue_briefs/">Special Reports/Issue Briefs</a></li>
+            <li><a href="http://www.bts.gov/programs/survey_results/index.html">Survey Results</a></li>
+            <li><a href="http://www.bts.gov/publications/bts_technical_report/">Technical Reports</a></li>
+            <li><a href="http://www.bts.gov/publications/bts_transportation_trends_in_focus/">Transportation Trends in Focus</a></li>
+          </ul></li>
+      </ul>
+    </div>
+    <div class="topNavigationLocalGreen">
+      <ul id="local5">
+        <li><a href="http://www.bts.gov/programs/">Subject Areas</a>
+          <ul>
+            <li><a href="http://www.bts.gov/programs/airline_information/">Aviation and Airline Data</a></li>
+            <li><a href="http://www.bts.gov/programs/congestion/index.html">Congestion</a></li>
+            <li><a href="http://www.bts.gov/programs/connectivity/index.html">Connectivity</a></li>
+            <li><a href="http://www.bts.gov/programs/economics_and_finance/">Economics and Finance</a></li>
+            <li><a href="http://www.bts.gov/programs/energy_and_environment/index.html">Energy and Environment</a></li>
+            <li><a href="http://www.bts.gov/programs/freight_transportation/">Freight Information</a></li>
+            <li><a href="http://www.bts.gov/programs/geographic_information_services/">Geographic Information</a></li>
+            <li><a href="http://www.bts.gov/programs/international/">International</a></li>
+            <li><a href="http://www.bts.gov/programs/livability/index.html">Livability</a></li>
+            <li><a href="http://www.bts.gov/programs/maritime_program/">Maritime Program</a></li>
+            <li><a href="http://www.bts.gov/programs/passenger_travel/index.html">Passenger Travel</a></li>
+            <li><a href="http://www.bts.gov/programs/safety/index.html">Safety</a></li>
+            <li><a href="http://www.bts.gov/programs/trending_and_forecasting/index.html">Trending and Forecasting</a></li>
+          </ul></li>
+      </ul>
+    </div>
+    <div class="topNavigationLocalGreen">
+      <ul id="local6">
+        <li><a href="http://www.bts.gov/external_links/">External Links</a>
+          <ul>
+            <li><a href="http://www.apta.com/resources/statistics/Pages/default.aspx" title="You Are Leaving DOT">American Public Transportation Association</a></li>
+            <li><a href="http://www.aar.org/" title="You Are Leaving DOT">Association of American Railroads</a></li>
+            <li><a href="http://www.fhwa.dot.gov/pubstats.html">Federal Highway Administration Publications and Statistics</a></li>
+            <li><a href="http://www.census.gov/population/www/socdemo/journey.html" title="You Are Leaving DOT">Journey to Work (Census Bureau)</a></li>
+            <li><a href="http://www.internationaltransportforum.org/home.html" title="You Are Leaving DOT">International Transport Forum</a></li>
+            <li><a href="http://marapps.dot.gov/mts/index.jsp">Marine Transportation System Data</a></li>
+            <li><a href="http://www.nhtsa.dot.gov/">National Highway Traffic Safety Administration </a></li>
+            <li><a href="http://www.ntdprogram.gov/ntdprogram/">Federal Transit Administration National Transit Database</a></li>
+            <li><a href="http://www.unece.org/trans/main/wp6/wp6.html" title="You Are Leaving DOT">United Nations Economic Commission for Europe Transport Data</a></li>
+            <li><a href="http://www.bts.gov/external_links/index.html#transportation">Transportation/ Government Websites</a></li>
+          </ul></li>
+      </ul>
+      </div>
+ 
+  </div>
+ 
+ <!-- nir <div class="topBcrumbs">&nbsp;</div>-->
+ <!-- <div class="topPrint"><img src="images/print_page.gif" alt="Print icon" border="0" onclick='javascript:window.open("Homepage.asp")'></div -->
+ <!--nir <div class="topPrint" style='font-size:10pt;'>&nbsp;<a href="http://www.rita.dot.gov">RITA</a> > <a href="http://www.bts.gov/">BTS</a></div>-->
+ 
+  <div class="topBcrumbs">&nbsp;<a href="http://www.rita.dot.gov">OST-R</a> > <a href="http://www.rita.dot.gov/bts/">BTS</a></div>
+  <div class="topPrint"style='font-size:10pt;'>&nbsp;</div>
+ 
+ <div id="topGrayLine"></div>
+ 
+</div>
+ 
+<div id="topLeftGrayCorner" class="topCorners"></div><div id="topRightGrayCorner" class="topCorners"></div>
+ 
+<div id="content"><a name="Skip_to_content"></a>
+
+
+  
+
+<!-- start of main content -->
+
+<table border = '0' width = '890px'><tr>
+
+<!--'First TD-->
+<td width ='136px' style='vertical-align:top;'>
+<table>
+<tr>
+	<td style='text-align:left;'>
+		<!--SIDE BAR IMAGES (Table 1)-->
+<TABLE style="margin-right:3px;">
+	<tr><td><a href="homepage.asp" ><img src="images/smalltop.gif" style="border:0px" alt="transtats logo" ></a></td></tr>
+	<FORM name='searchForm'  METHOD=POST ACTION='Search.asp'  >
+<TR><TD style='text-align:left;padding-left:10px;padding-top:2px;'><LABEL FOR='txtSearch'>
+		<a class=tsslcLbl style='color: #000000;text-decoration:none;' href='javascript:displayHelp(300,450,""SITESEARCH"")'>Search this site:</a></LABEL></td></tr><tr><td style='padding-left:5px' nowrap>
+		<INPUT class=slcBox TYPE='text' name='txtSearch' id='txtSearch' size=16 style='width:110px;height:20;vertical-align:bottom;'>&nbsp;
+		<Button TYPE='submit'  style='font-size:6.5pt;height:20;width=24;vertical-align:middle;' >Go</button></td>
+</TR>	
+	</FORM>
+<TR>
+<TD nowrap style='text-align:left;padding-left:10px;padding-top:2px;'><a class='finePrint'  href="SearchInfo.asp">Advanced Search</a></TD>
+</TR>
+<TR><TD class="hspacing"></TD></TR>
+<TD  class="sidebarTH">Resources</TD>
+</TR>
+<TR>
+<TD class="hspacing" style="background-color:#efefef;"></TD>
+</TR>
+<TR>
+<TD class="sidebarLink" onmouseover="toggleMenu(this,'Data Directory');return true;" 
+	onmouseout="toggleMenu(this,'');return true;"><A href="DataIndex.asp" style='color:#000000;text-decoration:none;'>Database Directory</A></TD>
+</TR>
+<TR>
+<TD class="sidebarLink"  onmouseover="toggleMenu(this,'Glossary');return true;" onmouseout="toggleMenu(this,' ');return true;"><A href='glossary.asp' style='color:#000000;text-decoration:none;'>Glossary</A></TD>
+</TR>
+<TR>
+<TD class="sidebarLink" onmouseover="toggleMenu(this,'What&#145;s New Page');return true;" onmouseout="toggleMenu(this,' ');return true;"><A href='http://www.bts.gov/upcoming_data_releases/' style='color:#000000;text-decoration:none;'>Upcoming Releases</A></TD>
+</TR>
+<TR>
+<TD class="sidebarLink" onmouseover="toggleMenu(this,'What&#145;s New Page');return true;" onmouseout="toggleMenu(this,' ');return true;"><A href='releaseinfo.asp' style='color:#000000;text-decoration:none;'>Data Release History</A></TD>
+</TR>
+<TR><TD class="hspacing"></TD></TR>
+<TR>
+	<TR>
+		<TD class="hspacing"></TD></TR>
+	<TR>
+	<TR>
+		<TD class="sidebarTH">Data Tools</TD>
+	</TR>
+	<TR><TD class="hspacing"></TD></TR>
+	<TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'Analysis Page');return true;" onmouseout="toggleMenu(this,'Analysis Page');return true;"><A href='Oneway.asp?Table_ID=236' style='color:#000000;text-decoration:none;'>Analysis</A></TD></TR><TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'Table Profile Page');return true;" onmouseout="toggleMenu(this,'Table Profile Page');return true;"><A href='TableInfo.asp?Table_ID=236' style='color:#000000;text-decoration:none;'>Table Profile</A></TD></TR><TR><TD class="sidebarLink"  onmouseover="toggleMenu(this,'Table Contents Page');return true;" onmouseout="toggleMenu(this,'Table Contents Page');return true;">Table <A href='Fields.asp?Table_ID=236' style='color:#000000;text-decoration:none;'>Contents</A></TD></TR>
+
+</TABLE>
+
+	</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+
+<TABLE class=mediumTABLE width='720px'  style='border-left:1px solid gray;' cellpadding=2 cellspacing=0><TR><TH class='libraryTH2'> :&nbsp;On-Time Performance</TH></TR></TABLE><TABLE class='mediumTABLE' width='720px' style='border-left:1px solid gray;padding-bottom:5px;' cellpadding=0 cellspacing=0><TR><TD colspan=5 class='libraryTHY' style='border-bottom:1px solid #336699;text-align:right;padding-right:5px;vertical-align:bottom;'><a class='finePrint' href='javascript:newWindow("printTimeSeries.asp");'>&nbsp;&nbsp;&nbsp;<a class=finePrint href='tables.asp?table_id=236'>Data Tables</a>&nbsp;&nbsp;&nbsp;<a class=finePrint href='Fields.asp?table_id=236'>Table Contents</a></TD></TR><FORM NAME=form1 METHOD=POST ACTION=DownLoad_Table.asp?Table_ID=236&Has_Group=3&Is_Zipped=0><TR style='padding-top:3px;padding-bottom:0;'><TD width=167px class='dataTD' style='vertical-align:bottom;'><a  href='javascript:displayHelp(650,450);'>Download Instructions</a><INPUT type=Hidden Name=UserTableName Value=On_Time_Performance><INPUT type=Hidden Name=DBShortName Value=><INPUT type=Hidden Name=RawDataTable Value=T_ONTIME><INPUT type=Hidden Name=sqlstr Value=><INPUT type=Hidden Name=varlist Value=><INPUT type=Hidden Name=grouplist Value=><INPUT type=Hidden Name=suml Value=><INPUT type=Hidden Name=sumRegion Value=><INPUT type=Hidden Name=filter1 Value= title=><INPUT type=Hidden Name=filter2 Value= title=><INPUT type=Hidden Name=geo Value=><INPUT type=Hidden Name=time Value=><INPUT type=Hidden Name=timename Value=Month ></TD><TD width=130px>&nbsp;&nbsp;</TD><TD width=110px><LABEL FOR=Geography><a class=tsslcLbl style='color: #000000;text-decoration:none;' href='javascript:displayHelp(300,450,"FILTERGEOGRAPHY")'>Filter&nbsp;Geography</a></LABEL></TD><TD width=100px><LABEL FOR=XYear><a class=tsslcLbl style='color: #000000;text-decoration:none;' href='javascript:displayHelp(300,450,"FILTERYEAR")'>Filter&nbsp;Year</a></LABEL></TD><TD width=100px><LABEL FOR=Frequency><a class=tsslcLbl style='color: #000000;text-decoration:none;' href='javascript:displayHelp(300,450,"FILTERPERIOD")'>Filter&nbsp;Period</a></LABEL></TD></TR><TR style='padding-bottom:3px;'><TD colspan=2 class='dataTD' style='font-size:7pt;font-weight:600;'>Latest Available Data: December 2015</TD><TD><SELECT class='slcBox' ID=GEOGRAPHY NAME=GEOGRAPHY SIZE=1 style='width:130px'><OPTION SELECTED VALUE=All>All&nbsp;<OPTION VALUE=Alabama>Alabama<OPTION VALUE=Alaska>Alaska<OPTION VALUE=Arizona>Arizona<OPTION VALUE=Arkansas>Arkansas<OPTION VALUE=California>California<OPTION VALUE=Colorado>Colorado<OPTION VALUE=Connecticut>Connecticut<OPTION VALUE=Delaware>Delaware<OPTION VALUE=Florida>Florida<OPTION VALUE=Georgia>Georgia<OPTION VALUE=Hawaii>Hawaii<OPTION VALUE=Idaho>Idaho<OPTION VALUE=Illinois>Illinois<OPTION VALUE=Indiana>Indiana<OPTION VALUE=Iowa>Iowa<OPTION VALUE=Kansas>Kansas<OPTION VALUE=Kentucky>Kentucky<OPTION VALUE=Louisiana>Louisiana<OPTION VALUE=Maine>Maine<OPTION VALUE=Maryland>Maryland<OPTION VALUE=Massachusetts>Massachusetts<OPTION VALUE=Michigan>Michigan<OPTION VALUE=Minnesota>Minnesota<OPTION VALUE=Mississippi>Mississippi<OPTION VALUE=Missouri>Missouri<OPTION VALUE=Montana>Montana<OPTION VALUE=Nebraska>Nebraska<OPTION VALUE=Nevada>Nevada<OPTION VALUE=New Hampshire>New Hampshire<OPTION VALUE=New Jersey>New Jersey<OPTION VALUE=New Mexico>New Mexico<OPTION VALUE=New York>New York<OPTION VALUE=North Carolina>North Carolina<OPTION VALUE=North Dakota>North Dakota<OPTION VALUE=Ohio>Ohio<OPTION VALUE=Oklahoma>Oklahoma<OPTION VALUE=Oregon>Oregon<OPTION VALUE=Pennsylvania>Pennsylvania<OPTION VALUE=Puerto Rico>Puerto Rico<OPTION VALUE=Rhode Island>Rhode Island<OPTION VALUE=South Carolina>South Carolina<OPTION VALUE=South Dakota>South Dakota<OPTION VALUE=Tennessee>Tennessee<OPTION VALUE=Texas>Texas<OPTION VALUE=U.S. Pacific Trust Territories and Possessions>U.S. Pacific Trust Territories and Possessions<OPTION VALUE=U.S. Virgin Islands>U.S. Virgin Islands<OPTION VALUE=Utah>Utah<OPTION VALUE=Vermont>Vermont<OPTION VALUE=Virginia>Virginia<OPTION VALUE=Washington>Washington<OPTION VALUE=West Virginia>West Virginia<OPTION VALUE=Wisconsin>Wisconsin<OPTION VALUE=Wyoming>Wyoming</SELECT></TD><TD><SELECT class='slcBox' ID=XYEAR NAME=XYEAR SIZE=1><OPTION VALUE=1987>1987<OPTION VALUE=1988>1988<OPTION VALUE=1989>1989<OPTION VALUE=1990>1990<OPTION VALUE=1991>1991<OPTION VALUE=1992>1992<OPTION VALUE=1993>1993<OPTION VALUE=1994>1994<OPTION VALUE=1995>1995<OPTION VALUE=1996>1996<OPTION VALUE=1997>1997<OPTION VALUE=1998>1998<OPTION VALUE=1999>1999<OPTION VALUE=2000>2000<OPTION VALUE=2001>2001<OPTION VALUE=2002>2002<OPTION VALUE=2003>2003<OPTION VALUE=2004>2004<OPTION VALUE=2005>2005<OPTION VALUE=2006>2006<OPTION VALUE=2007>2007<OPTION VALUE=2008>2008<OPTION VALUE=2009>2009<OPTION VALUE=2010>2010<OPTION VALUE=2011>2011<OPTION VALUE=2012>2012<OPTION VALUE=2013>2013<OPTION VALUE=2014>2014<OPTION SELECTED VALUE=2015>2015</SELECT></TD><TD ><SELECT class='slcBox' ID=FREQUENCY  NAME=FREQUENCY SIZE=1><OPTION VALUE=1>January<OPTION VALUE=2>February<OPTION VALUE=3>March<OPTION VALUE=4>April<OPTION VALUE=5>May<OPTION VALUE=6>June<OPTION VALUE=7>July<OPTION VALUE=8>August<OPTION VALUE=9>September<OPTION VALUE=10>October<OPTION VALUE=11>November<OPTION VALUE=12>December</SELECT></TD></TR></TABLE><TABLE class=mediumTable width='720px' style='border-left:1px solid gray;padding-bottom:5px;' cellpadding=0 cellspacing=0><TR ><TD style='border-top:1px solid gray;' nowrap ><label for='AllVars'><INPUT TYPE='checkbox' name='AllVars' ID='AllVars' Value='All' onclick='Try2()' STYLE='DISPLAY:NONE;'></label><a class=tsslcLbl style='color: #000000;text-decoration:none;vertical-align:middle;' href='javascript:displayHelp(300,450,"SELECTALLFIELDS")'>&nbsp;</a><label for='DownloadZip'><INPUT TYPE='checkbox' name='DownloadZip' ID='DownloadZip' Value='No' onclick='Try3(this)'></label><a class=tsslcLbl style='color: #000000;text-decoration:none;vertical-align:middle;' href='javascript:displayHelp(300,450,"DownloadZip")'>Prezipped File</a>&nbsp;<label for='showNull'>&nbsp;<INPUT TYPE='checkbox' Name='showNull' ID='showNull' Value='No' onclick='shNull(this)'></label><a class=tsslcLbl style='color: #000000;text-decoration:none;vertical-align:middle;' href='javascript:displayHelp(300,450,"SHOWNULL")'>% Missing</a><label for='document'></label>&nbsp;<INPUT TYPE='checkbox' Name='document' ID='document' Value='Y' ><a class=tsslcLbl style='color: #000000;text-decoration:none;vertical-align:middle;' href='javascript:displayHelp(300,450,"DOCUMENT")'>Documentation</a><label for='TermsDef'></label>&nbsp;<INPUT TYPE='checkbox' Name='TermsDef' ID='TermsDef' Value='Y'  ><a class=tsslcLbl style='color: #000000;text-decoration:none;vertical-align:middle;' href='javascript:displayHelp(300,450,"TERMSDEF")'>Terms</a></TD><TD class='dataTDRight' style='border-top:1px solid gray;vertical-align:middle;padding-bottom:3px;'><BUTTON TYPE='Button' onclick='tryDownload()' class='tsbutton' name='Download' style='display:inline;' onmouseover='window.status="Click here to download";return true' onmouseout='window.status=" ";return true'>Download</BUTTON><BUTTON TYPE='Button' class='tsbutton' onclick='tryDownload2()' name='Download2' style='display:none;' onmouseover='window.status="Click here to download";return true' onmouseout='window.status=" ";return true'>Download</BUTTON></TD></TR></TABLE><TABLE class='mediumTABLE' width='720px' style='border-left:1px solid gray;' cellpadding=0 cellspacing=0><TR><TH scope=col class='libraryTH2' width='140px'>Field Name &nbsp;</TH><TH scope=col class='libraryTH2' width='187px'>Description &nbsp;</TH><TH scope=col class='libraryTH2' style='width:60px;' nowrap><span ID=pctNull0 style='visibility:hidden'>%&nbsp;Missing<span></TH><TH scope=col class='libraryTH2' style='width:200px;text-align:right;padding-right:10px'>Support Table&nbsp;</TH></TR><TR><TD colspan=5 class='dataTH' style='font-weight:800;'>Time Period</TD></TR><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Year Value=YEAR onclick='Try4(this);'> Year</TD><TD class='dataTD'>Year</TD><TD class='dataTDRight'><span ID=pctNull1 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Year Title='Year'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Quarter Value=QUARTER onclick='Try4(this);'> Quarter</TD><TD class='dataTD'>Quarter (1-4)</TD><TD class='dataTDRight'><span ID=pctNull2 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_QUARTERS>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=Quarter Title='Quarter%20%281-4%29'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Month Value=MONTH onclick='Try4(this);'> Month</TD><TD class='dataTD'>Month</TD><TD class='dataTDRight'><span ID=pctNull3 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_MONTHS>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=Month Title='Month'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DayofMonth Value=DAY_OF_MONTH onclick='Try4(this);'> DayofMonth</TD><TD class='dataTD'>Day of Month</TD><TD class='dataTDRight'><span ID=pctNull4 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=DayofMonth Title='Day%20of%20Month'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DayOfWeek Value=DAY_OF_WEEK onclick='Try4(this);'> DayOfWeek</TD><TD class='dataTD'>Day of Week</TD><TD class='dataTDRight'><span ID=pctNull5 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_WEEKDAYS>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=DayOfWeek Title='Day%20of%20Week'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=FlightDate Value=FL_DATE onclick='Try4(this);'> FlightDate</TD><TD class='dataTD'>Flight Date (yyyymmdd)</TD><TD class='dataTDRight'><span ID=pctNull6 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=FlightDate Title='Flight%20Date%20%28yyyymmdd%29'><INPUT TYPE=hidden name=VarType Value=Char><TR><TD colspan=5 class='dataTH' style='font-weight:800;'>Airline</TD></TR><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=UniqueCarrier Value=UNIQUE_CARRIER onclick='Try4(this);'> UniqueCarrier</TD><TD class='dataTD'>Unique Carrier Code. When the same code has been used by multiple carriers, a numeric suffix is used for earlier users, for example, PA, PA(1), PA(2). Use this field for analysis across a range of years.</TD><TD class='dataTDRight'><span ID=pctNull7 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_UNIQUE_CARRIERS>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=UniqueCarrier Title='Unique%20Carrier%20Code.%20When%20the%20same%20code%20has%20been%20used%20by%20multiple%20carriers%2C%20a%20numeric%20suffix%20is%20used%20for%20earlier%20users%2C%20for%20example%2C%20PA%2C%20PA%281%29%2C%20PA%282%29.%20Use%20this%20field%20for%20analysis%20across%20a%20range%20of%20years.'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=AirlineID Value=AIRLINE_ID onclick='Try4(this);'> AirlineID</TD><TD class='dataTD'>An identification number assigned by US DOT to identify a unique airline (carrier). A unique airline (carrier) is defined as one holding and reporting under the same DOT certificate regardless of its Code, Name, or holding company/corporation.</TD><TD class='dataTDRight'><span ID=pctNull8 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_AIRLINE_ID>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=AirlineID Title='An%20identification%20number%20assigned%20by%20US%20DOT%20to%20identify%20a%20unique%20airline%20%28carrier%29.%20A%20unique%20airline%20%28carrier%29%20is%20defined%20as%20one%20holding%20and%20reporting%20under%20the%20same%20DOT%20certificate%20regardless%20of%20its%20Code%2C%20Name%2C%20or%20holding%20company/corporation.'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Carrier Value=CARRIER onclick='Try4(this);'> Carrier</TD><TD class='dataTD'>Code assigned by IATA and commonly used to identify a carrier. As the same code may have been assigned to different carriers over time, the code is not always unique. For analysis, use the Unique Carrier Code.</TD><TD class='dataTDRight'><span ID=pctNull9 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_CARRIER_HISTORY>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=Carrier Title='Code%20assigned%20by%20IATA%20and%20commonly%20used%20to%20identify%20a%20carrier.%20As%20the%20same%20code%20may%20have%20been%20assigned%20to%20different%20carriers%20over%20time%2C%20the%20code%20is%20not%20always%20unique.%20For%20analysis%2C%20use%20the%20Unique%20Carrier%20Code.'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=TailNum Value=TAIL_NUM onclick='Try4(this);'> TailNum</TD><TD class='dataTD'>Tail Number</TD><TD class='dataTDRight'><span ID=pctNull10 style='visibility:hidden'>22.77</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=TailNum Title='Tail%20Number'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=FlightNum Value=FL_NUM onclick='Try4(this);'> FlightNum</TD><TD class='dataTD'>Flight Number</TD><TD class='dataTDRight'><span ID=pctNull11 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=FlightNum Title='Flight%20Number'><INPUT TYPE=hidden name=VarType Value=Char><TR><TD colspan=5 class='dataTH' style='font-weight:800;'>Origin </TD></TR><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=OriginAirportID Value=ORIGIN_AIRPORT_ID onclick='Try4(this);' CHECKED > OriginAirportID</TD><TD class='dataTD'>Origin Airport, Airport ID. An identification number assigned by US DOT to identify a unique airport.  Use this field for airport analysis across a range of years because an airport can change its airport code and airport codes can be reused.</TD><TD class='dataTDRight'><span ID=pctNull12 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_AIRPORT_ID>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=OriginAirportID Title='Origin%20Airport%2C%20Airport%20ID.%20An%20identification%20number%20assigned%20by%20US%20DOT%20to%20identify%20a%20unique%20airport.%20%20Use%20this%20field%20for%20airport%20analysis%20across%20a%20range%20of%20years%20because%20an%20airport%20can%20change%20its%20airport%20code%20and%20airport%20codes%20can%20be%20reused.'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=OriginAirportSeqID Value=ORIGIN_AIRPORT_SEQ_ID onclick='Try4(this);' CHECKED > OriginAirportSeqID</TD><TD class='dataTD'>Origin Airport, Airport Sequence ID. An identification number assigned by US DOT to identify a unique airport at a given point of time.  Airport attributes, such as airport name or coordinates, may change over time.</TD><TD class='dataTDRight'><span ID=pctNull13 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_AIRPORT_SEQ_ID>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=OriginAirportSeqID Title='Origin%20Airport%2C%20Airport%20Sequence%20ID.%20An%20identification%20number%20assigned%20by%20US%20DOT%20to%20identify%20a%20unique%20airport%20at%20a%20given%20point%20of%20time.%20%20Airport%20attributes%2C%20such%20as%20airport%20name%20or%20coordinates%2C%20may%20change%20over%20time.'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=OriginCityMarketID Value=ORIGIN_CITY_MARKET_ID onclick='Try4(this);' CHECKED > OriginCityMarketID</TD><TD class='dataTD'>Origin Airport, City Market ID. City Market ID is an identification number assigned by US DOT to identify a city market.  Use this field to consolidate airports serving the same city market.</TD><TD class='dataTDRight'><span ID=pctNull14 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_CITY_MARKET_ID>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=OriginCityMarketID Title='Origin%20Airport%2C%20City%20Market%20ID.%20City%20Market%20ID%20is%20an%20identification%20number%20assigned%20by%20US%20DOT%20to%20identify%20a%20city%20market.%20%20Use%20this%20field%20to%20consolidate%20airports%20serving%20the%20same%20city%20market.'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Origin Value=ORIGIN onclick='Try4(this);'> Origin</TD><TD class='dataTD'>Origin Airport</TD><TD class='dataTDRight'><span ID=pctNull15 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_AIRPORT>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=Origin Title='Origin%20Airport'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=OriginCityName Value=ORIGIN_CITY_NAME onclick='Try4(this);'> OriginCityName</TD><TD class='dataTD'>Origin Airport, City Name</TD><TD class='dataTDRight'><span ID=pctNull16 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=OriginCityName Title='Origin%20Airport%2C%20City%20Name'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=OriginState Value=ORIGIN_STATE_ABR onclick='Try4(this);'> OriginState</TD><TD class='dataTD'>Origin Airport, State Code</TD><TD class='dataTDRight'><span ID=pctNull17 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_STATE_ABR_AVIATION>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=OriginState Title='Origin%20Airport%2C%20State%20Code'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=OriginStateFips Value=ORIGIN_STATE_FIPS onclick='Try4(this);'> OriginStateFips</TD><TD class='dataTD'>Origin Airport, State Fips</TD><TD class='dataTDRight'><span ID=pctNull18 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_STATE_FIPS>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=OriginStateFips Title='Origin%20Airport%2C%20State%20Fips'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=OriginStateName Value=ORIGIN_STATE_NM onclick='Try4(this);'> OriginStateName</TD><TD class='dataTD'>Origin Airport, State Name</TD><TD class='dataTDRight'><span ID=pctNull19 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=OriginStateName Title='Origin%20Airport%2C%20State%20Name'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=OriginWac Value=ORIGIN_WAC onclick='Try4(this);'> OriginWac</TD><TD class='dataTD'>Origin Airport, World Area Code</TD><TD class='dataTDRight'><span ID=pctNull20 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_WORLD_AREA_CODES>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=OriginWac Title='Origin%20Airport%2C%20World%20Area%20Code'><INPUT TYPE=hidden name=VarType Value=Num><TR><TD colspan=5 class='dataTH' style='font-weight:800;'>Destination</TD></TR><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DestAirportID Value=DEST_AIRPORT_ID onclick='Try4(this);' CHECKED > DestAirportID</TD><TD class='dataTD'>Destination Airport, Airport ID. An identification number assigned by US DOT to identify a unique airport.  Use this field for airport analysis across a range of years because an airport can change its airport code and airport codes can be reused.</TD><TD class='dataTDRight'><span ID=pctNull21 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_AIRPORT_ID>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=DestAirportID Title='Destination%20Airport%2C%20Airport%20ID.%20An%20identification%20number%20assigned%20by%20US%20DOT%20to%20identify%20a%20unique%20airport.%20%20Use%20this%20field%20for%20airport%20analysis%20across%20a%20range%20of%20years%20because%20an%20airport%20can%20change%20its%20airport%20code%20and%20airport%20codes%20can%20be%20reused.'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DestAirportSeqID Value=DEST_AIRPORT_SEQ_ID onclick='Try4(this);' CHECKED > DestAirportSeqID</TD><TD class='dataTD'>Destination Airport, Airport Sequence ID. An identification number assigned by US DOT to identify a unique airport at a given point of time.  Airport attributes, such as airport name or coordinates, may change over time.</TD><TD class='dataTDRight'><span ID=pctNull22 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_AIRPORT_SEQ_ID>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=DestAirportSeqID Title='Destination%20Airport%2C%20Airport%20Sequence%20ID.%20An%20identification%20number%20assigned%20by%20US%20DOT%20to%20identify%20a%20unique%20airport%20at%20a%20given%20point%20of%20time.%20%20Airport%20attributes%2C%20such%20as%20airport%20name%20or%20coordinates%2C%20may%20change%20over%20time.'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DestCityMarketID Value=DEST_CITY_MARKET_ID onclick='Try4(this);' CHECKED > DestCityMarketID</TD><TD class='dataTD'>Destination Airport, City Market ID. City Market ID is an identification number assigned by US DOT to identify a city market.  Use this field to consolidate airports serving the same city market.</TD><TD class='dataTDRight'><span ID=pctNull23 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_CITY_MARKET_ID>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=DestCityMarketID Title='Destination%20Airport%2C%20City%20Market%20ID.%20City%20Market%20ID%20is%20an%20identification%20number%20assigned%20by%20US%20DOT%20to%20identify%20a%20city%20market.%20%20Use%20this%20field%20to%20consolidate%20airports%20serving%20the%20same%20city%20market.'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Dest Value=DEST onclick='Try4(this);'> Dest</TD><TD class='dataTD'>Destination Airport</TD><TD class='dataTDRight'><span ID=pctNull24 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_AIRPORT>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=Dest Title='Destination%20Airport'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DestCityName Value=DEST_CITY_NAME onclick='Try4(this);'> DestCityName</TD><TD class='dataTD'>Destination Airport, City Name</TD><TD class='dataTDRight'><span ID=pctNull25 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=DestCityName Title='Destination%20Airport%2C%20City%20Name'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DestState Value=DEST_STATE_ABR onclick='Try4(this);'> DestState</TD><TD class='dataTD'>Destination Airport, State Code</TD><TD class='dataTDRight'><span ID=pctNull26 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_STATE_ABR_AVIATION>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=DestState Title='Destination%20Airport%2C%20State%20Code'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DestStateFips Value=DEST_STATE_FIPS onclick='Try4(this);'> DestStateFips</TD><TD class='dataTD'>Destination Airport, State Fips</TD><TD class='dataTDRight'><span ID=pctNull27 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_STATE_FIPS>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=DestStateFips Title='Destination%20Airport%2C%20State%20Fips'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DestStateName Value=DEST_STATE_NM onclick='Try4(this);'> DestStateName</TD><TD class='dataTD'>Destination Airport, State Name</TD><TD class='dataTDRight'><span ID=pctNull28 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=DestStateName Title='Destination%20Airport%2C%20State%20Name'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DestWac Value=DEST_WAC onclick='Try4(this);'> DestWac</TD><TD class='dataTD'>Destination Airport, World Area Code</TD><TD class='dataTDRight'><span ID=pctNull29 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_WORLD_AREA_CODES>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=DestWac Title='Destination%20Airport%2C%20World%20Area%20Code'><INPUT TYPE=hidden name=VarType Value=Num><TR><TD colspan=5 class='dataTH' style='font-weight:800;'>Departure Performance</TD></TR><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=CRSDepTime Value=CRS_DEP_TIME onclick='Try4(this);'> CRSDepTime</TD><TD class='dataTD'>CRS Departure Time (local time: hhmm)</TD><TD class='dataTDRight'><span ID=pctNull30 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=CRSDepTime Title='CRS%20Departure%20Time%20%28local%20time%3A%20hhmm%29'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DepTime Value=DEP_TIME onclick='Try4(this);'> DepTime</TD><TD class='dataTD'>Actual Departure Time (local time: hhmm)</TD><TD class='dataTDRight'><span ID=pctNull31 style='visibility:hidden'>1.79</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=DepTime Title='Actual%20Departure%20Time%20%28local%20time%3A%20hhmm%29'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DepDelay Value=DEP_DELAY onclick='Try4(this);'> DepDelay</TD><TD class='dataTD'>Difference in minutes between scheduled and actual departure time. Early departures show negative numbers.</TD><TD class='dataTDRight'><span ID=pctNull32 style='visibility:hidden'>1.79</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=DepDelay Title='Difference%20in%20minutes%20between%20scheduled%20and%20actual%20departure%20time.%20Early%20departures%20show%20negative%20numbers.'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DepDelayMinutes Value=DEP_DELAY_NEW onclick='Try4(this);'> DepDelayMinutes</TD><TD class='dataTD'>Difference in minutes between scheduled and actual departure time. Early departures set to 0.</TD><TD class='dataTDRight'><span ID=pctNull33 style='visibility:hidden'>1.79</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=DepDelayMinutes Title='Difference%20in%20minutes%20between%20scheduled%20and%20actual%20departure%20time.%20Early%20departures%20set%20to%200.'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DepDel15 Value=DEP_DEL15 onclick='Try4(this);'> DepDel15</TD><TD class='dataTD'>Departure Delay Indicator, 15 Minutes or More (1=Yes)</TD><TD class='dataTDRight'><span ID=pctNull34 style='visibility:hidden'>1.79</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_YESNO_RESP>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=DepDel15 Title='Departure%20Delay%20Indicator%2C%2015%20Minutes%20or%20More%20%281%3DYes%29'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DepartureDelayGroups Value=DEP_DELAY_GROUP onclick='Try4(this);'> DepartureDelayGroups</TD><TD class='dataTD'>Departure Delay intervals, every (15 minutes from <-15 to >180)</TD><TD class='dataTDRight'><span ID=pctNull35 style='visibility:hidden'>1.79</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_ONTIME_DELAY_GROUPS>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=DepartureDelayGroups Title='Departure%20Delay%20intervals%2C%20every%20%2815%20minutes%20from%20%3C-15%20to%20%3E180%29'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DepTimeBlk Value=DEP_TIME_BLK onclick='Try4(this);'> DepTimeBlk</TD><TD class='dataTD'>CRS Departure Time Block, Hourly Intervals</TD><TD class='dataTDRight'><span ID=pctNull36 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_DEPARRBLK>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=DepTimeBlk Title='CRS%20Departure%20Time%20Block%2C%20Hourly%20Intervals'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=TaxiOut Value=TAXI_OUT onclick='Try4(this);'> TaxiOut</TD><TD class='dataTD'>Taxi Out Time, in Minutes</TD><TD class='dataTDRight'><span ID=pctNull37 style='visibility:hidden'>23.9</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=TaxiOut Title='Taxi%20Out%20Time%2C%20in%20Minutes'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=WheelsOff Value=WHEELS_OFF onclick='Try4(this);'> WheelsOff</TD><TD class='dataTD'>Wheels Off Time (local time: hhmm)</TD><TD class='dataTDRight'><span ID=pctNull38 style='visibility:hidden'>23.91</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=WheelsOff Title='Wheels%20Off%20Time%20%28local%20time%3A%20hhmm%29'><INPUT TYPE=hidden name=VarType Value=Char><TR><TD colspan=5 class='dataTH' style='font-weight:800;'>Arrival Performance</TD></TR><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=WheelsOn Value=WHEELS_ON onclick='Try4(this);'> WheelsOn</TD><TD class='dataTD'>Wheels On Time (local time: hhmm)</TD><TD class='dataTDRight'><span ID=pctNull39 style='visibility:hidden'>24.04</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=WheelsOn Title='Wheels%20On%20Time%20%28local%20time%3A%20hhmm%29'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=TaxiIn Value=TAXI_IN onclick='Try4(this);'> TaxiIn</TD><TD class='dataTD'>Taxi In Time, in Minutes</TD><TD class='dataTDRight'><span ID=pctNull40 style='visibility:hidden'>24.03</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=TaxiIn Title='Taxi%20In%20Time%2C%20in%20Minutes'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=CRSArrTime Value=CRS_ARR_TIME onclick='Try4(this);'> CRSArrTime</TD><TD class='dataTD'>CRS Arrival Time (local time: hhmm)</TD><TD class='dataTDRight'><span ID=pctNull41 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=CRSArrTime Title='CRS%20Arrival%20Time%20%28local%20time%3A%20hhmm%29'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=ArrTime Value=ARR_TIME onclick='Try4(this);'> ArrTime</TD><TD class='dataTD'>Actual Arrival Time (local time: hhmm)</TD><TD class='dataTDRight'><span ID=pctNull42 style='visibility:hidden'>1.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=ArrTime Title='Actual%20Arrival%20Time%20%28local%20time%3A%20hhmm%29'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=ArrDelay Value=ARR_DELAY onclick='Try4(this);'> ArrDelay</TD><TD class='dataTD'>Difference in minutes between scheduled and actual arrival time. Early arrivals show negative numbers.</TD><TD class='dataTDRight'><span ID=pctNull43 style='visibility:hidden'>2.04</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=ArrDelay Title='Difference%20in%20minutes%20between%20scheduled%20and%20actual%20arrival%20time.%20Early%20arrivals%20show%20negative%20numbers.'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=ArrDelayMinutes Value=ARR_DELAY_NEW onclick='Try4(this);'> ArrDelayMinutes</TD><TD class='dataTD'>Difference in minutes between scheduled and actual arrival time. Early arrivals set to 0.</TD><TD class='dataTDRight'><span ID=pctNull44 style='visibility:hidden'>2.04</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=ArrDelayMinutes Title='Difference%20in%20minutes%20between%20scheduled%20and%20actual%20arrival%20time.%20Early%20arrivals%20set%20to%200.'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=ArrDel15 Value=ARR_DEL15 onclick='Try4(this);'> ArrDel15</TD><TD class='dataTD'>Arrival Delay Indicator, 15 Minutes or More (1=Yes)</TD><TD class='dataTDRight'><span ID=pctNull45 style='visibility:hidden'>2.04</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_YESNO_RESP>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=ArrDel15 Title='Arrival%20Delay%20Indicator%2C%2015%20Minutes%20or%20More%20%281%3DYes%29'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=ArrivalDelayGroups Value=ARR_DELAY_GROUP onclick='Try4(this);'> ArrivalDelayGroups</TD><TD class='dataTD'>Arrival Delay intervals, every (15-minutes from <-15 to >180)</TD><TD class='dataTDRight'><span ID=pctNull46 style='visibility:hidden'>2.04</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_ONTIME_DELAY_GROUPS>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=ArrivalDelayGroups Title='Arrival%20Delay%20intervals%2C%20every%20%2815-minutes%20from%20%3C-15%20to%20%3E180%29'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=ArrTimeBlk Value=ARR_TIME_BLK onclick='Try4(this);'> ArrTimeBlk</TD><TD class='dataTD'>CRS Arrival Time Block, Hourly Intervals</TD><TD class='dataTDRight'><span ID=pctNull47 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_DEPARRBLK>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=ArrTimeBlk Title='CRS%20Arrival%20Time%20Block%2C%20Hourly%20Intervals'><INPUT TYPE=hidden name=VarType Value=Char><TR><TD colspan=5 class='dataTH' style='font-weight:800;'>Cancellations and Diversions</TD></TR><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Cancelled Value=CANCELLED onclick='Try4(this);'> Cancelled</TD><TD class='dataTD'>Cancelled Flight Indicator (1=Yes)</TD><TD class='dataTDRight'><span ID=pctNull48 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_YESNO_RESP>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=Cancelled Title='Cancelled%20Flight%20Indicator%20%281%3DYes%29'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=CancellationCode Value=CANCELLATION_CODE onclick='Try4(this);'> CancellationCode</TD><TD class='dataTD'>Specifies The Reason For Cancellation</TD><TD class='dataTDRight'><span ID=pctNull49 style='visibility:hidden'>99.13</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_CANCELLATION>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=CancellationCode Title='Specifies%20The%20Reason%20For%20Cancellation'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Diverted Value=DIVERTED onclick='Try4(this);'> Diverted</TD><TD class='dataTD'>Diverted Flight Indicator (1=Yes)</TD><TD class='dataTDRight'><span ID=pctNull50 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_YESNO_RESP>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=Diverted Title='Diverted%20Flight%20Indicator%20%281%3DYes%29'><INPUT TYPE=hidden name=VarType Value=Num><TR><TD colspan=5 class='dataTH' style='font-weight:800;'>Flight Summaries</TD></TR><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=CRSElapsedTime Value=CRS_ELAPSED_TIME onclick='Try4(this);'> CRSElapsedTime</TD><TD class='dataTD'>CRS Elapsed Time of Flight, in Minutes</TD><TD class='dataTDRight'><span ID=pctNull51 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=CRSElapsedTime Title='CRS%20Elapsed%20Time%20of%20Flight%2C%20in%20Minutes'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=ActualElapsedTime Value=ACTUAL_ELAPSED_TIME onclick='Try4(this);'> ActualElapsedTime</TD><TD class='dataTD'>Elapsed Time of Flight, in Minutes</TD><TD class='dataTDRight'><span ID=pctNull52 style='visibility:hidden'>2.04</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=ActualElapsedTime Title='Elapsed%20Time%20of%20Flight%2C%20in%20Minutes'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=AirTime Value=AIR_TIME onclick='Try4(this);'> AirTime</TD><TD class='dataTD'>Flight Time, in Minutes</TD><TD class='dataTDRight'><span ID=pctNull53 style='visibility:hidden'>24.08</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=AirTime Title='Flight%20Time%2C%20in%20Minutes'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Flights Value=FLIGHTS onclick='Try4(this);'> Flights</TD><TD class='dataTD'>Number of Flights</TD><TD class='dataTDRight'><span ID=pctNull54 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Flights Title='Number%20of%20Flights'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Distance Value=DISTANCE onclick='Try4(this);'> Distance</TD><TD class='dataTD'>Distance between airports (miles)</TD><TD class='dataTDRight'><span ID=pctNull55 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Distance Title='Distance%20between%20airports%20%28miles%29'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DistanceGroup Value=DISTANCE_GROUP onclick='Try4(this);'> DistanceGroup</TD><TD class='dataTD'>Distance Intervals, every 250 Miles, for Flight Segment</TD><TD class='dataTDRight'><span ID=pctNull56 style='visibility:hidden'>&lt;0.005</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_DISTANCE_GROUP_250>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=DistanceGroup Title='Distance%20Intervals%2C%20every%20250%20Miles%2C%20for%20Flight%20Segment'><INPUT TYPE=hidden name=VarType Value=Num><TR><TD colspan=5 class='dataTH' style='font-weight:800;'>Cause of Delay (Data starts 6/2003)</TD></TR><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=CarrierDelay Value=CARRIER_DELAY onclick='Try4(this);'> CarrierDelay</TD><TD class='dataTD'>Carrier Delay, in Minutes</TD><TD class='dataTDRight'><span ID=pctNull57 style='visibility:hidden'>90.05</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=CarrierDelay Title='Carrier%20Delay%2C%20in%20Minutes'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=WeatherDelay Value=WEATHER_DELAY onclick='Try4(this);'> WeatherDelay</TD><TD class='dataTD'>Weather Delay, in Minutes</TD><TD class='dataTDRight'><span ID=pctNull58 style='visibility:hidden'>90.05</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=WeatherDelay Title='Weather%20Delay%2C%20in%20Minutes'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=NASDelay Value=NAS_DELAY onclick='Try4(this);'> NASDelay</TD><TD class='dataTD'>National Air System Delay, in Minutes</TD><TD class='dataTDRight'><span ID=pctNull59 style='visibility:hidden'>90.05</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=NASDelay Title='National%20Air%20System%20Delay%2C%20in%20Minutes'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=SecurityDelay Value=SECURITY_DELAY onclick='Try4(this);'> SecurityDelay</TD><TD class='dataTD'>Security Delay, in Minutes</TD><TD class='dataTDRight'><span ID=pctNull60 style='visibility:hidden'>90.05</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=SecurityDelay Title='Security%20Delay%2C%20in%20Minutes'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=LateAircraftDelay Value=LATE_AIRCRAFT_DELAY onclick='Try4(this);'> LateAircraftDelay</TD><TD class='dataTD'>Late Aircraft Delay, in Minutes</TD><TD class='dataTDRight'><span ID=pctNull61 style='visibility:hidden'>90.05</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=LateAircraftDelay Title='Late%20Aircraft%20Delay%2C%20in%20Minutes'><INPUT TYPE=hidden name=VarType Value=Num><TR><TD colspan=5 class='dataTH' style='font-weight:800;'>Gate Return Information at Origin Airport (Data starts 10/2008)</TD></TR><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=FirstDepTime Value=FIRST_DEP_TIME onclick='Try4(this);'> FirstDepTime</TD><TD class='dataTD'>First Gate Departure Time at Origin Airport</TD><TD class='dataTDRight'><span ID=pctNull62 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=FirstDepTime Title='First%20Gate%20Departure%20Time%20at%20Origin%20Airport'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=TotalAddGTime Value=TOTAL_ADD_GTIME onclick='Try4(this);'> TotalAddGTime</TD><TD class='dataTD'>Total Ground Time Away from Gate for Gate Return or Cancelled Flight</TD><TD class='dataTDRight'><span ID=pctNull63 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=TotalAddGTime Title='Total%20Ground%20Time%20Away%20from%20Gate%20for%20Gate%20Return%20or%20Cancelled%20Flight'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=LongestAddGTime Value=LONGEST_ADD_GTIME onclick='Try4(this);'> LongestAddGTime</TD><TD class='dataTD'>Longest Time Away from Gate for Gate Return or Cancelled Flight</TD><TD class='dataTDRight'><span ID=pctNull64 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=LongestAddGTime Title='Longest%20Time%20Away%20from%20Gate%20for%20Gate%20Return%20or%20Cancelled%20Flight'><INPUT TYPE=hidden name=VarType Value=Num><TR><TD colspan=5 class='dataTH' style='font-weight:800;'>Diverted Airport Information (Data starts 10/2008)</TD></TR><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DivAirportLandings Value=DIV_AIRPORT_LANDINGS onclick='Try4(this);'> DivAirportLandings</TD><TD class='dataTD'>Number of Diverted Airport Landings</TD><TD class='dataTDRight'><span ID=pctNull65 style='visibility:hidden'>73.16</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_DIVERSIONS>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=DivAirportLandings Title='Number%20of%20Diverted%20Airport%20Landings'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DivReachedDest Value=DIV_REACHED_DEST onclick='Try4(this);'> DivReachedDest</TD><TD class='dataTD'>Diverted Flight Reaching Scheduled Destination Indicator (1=Yes)</TD><TD class='dataTDRight'><span ID=pctNull66 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_YESNO_RESP>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=DivReachedDest Title='Diverted%20Flight%20Reaching%20Scheduled%20Destination%20Indicator%20%281%3DYes%29'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DivActualElapsedTime Value=DIV_ACTUAL_ELAPSED_TIME onclick='Try4(this);'> DivActualElapsedTime</TD><TD class='dataTD'>Elapsed Time of Diverted Flight Reaching Scheduled Destination, in Minutes.  The ActualElapsedTime column remains NULL for all diverted flights.</TD><TD class='dataTDRight'><span ID=pctNull67 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=DivActualElapsedTime Title='Elapsed%20Time%20of%20Diverted%20Flight%20Reaching%20Scheduled%20Destination%2C%20in%20Minutes.%20%20The%20ActualElapsedTime%20column%20remains%20NULL%20for%20all%20diverted%20flights.'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DivArrDelay Value=DIV_ARR_DELAY onclick='Try4(this);'> DivArrDelay</TD><TD class='dataTD'>Difference in minutes between scheduled and actual arrival time for a diverted flight reaching scheduled destination.  The ArrDelay column remains NULL for all diverted flights.</TD><TD class='dataTDRight'><span ID=pctNull68 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=DivArrDelay Title='Difference%20in%20minutes%20between%20scheduled%20and%20actual%20arrival%20time%20for%20a%20diverted%20flight%20reaching%20scheduled%20destination.%20%20The%20ArrDelay%20column%20remains%20NULL%20for%20all%20diverted%20flights.'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=DivDistance Value=DIV_DISTANCE onclick='Try4(this);'> DivDistance</TD><TD class='dataTD'>Distance between scheduled destination and final diverted airport (miles).  Value will be 0 for diverted flight reaching scheduled destination.</TD><TD class='dataTDRight'><span ID=pctNull69 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=DivDistance Title='Distance%20between%20scheduled%20destination%20and%20final%20diverted%20airport%20%28miles%29.%20%20Value%20will%20be%200%20for%20diverted%20flight%20reaching%20scheduled%20destination.'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div1Airport Value=DIV1_AIRPORT onclick='Try4(this);'> Div1Airport</TD><TD class='dataTD'>Diverted Airport Code1</TD><TD class='dataTDRight'><span ID=pctNull70 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div1Airport Title='Diverted%20Airport%20Code1'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div1AirportID Value=DIV1_AIRPORT_ID onclick='Try4(this);'> Div1AirportID</TD><TD class='dataTD'>Airport ID of Diverted Airport 1. Airport ID is a Unique Key for an Airport</TD><TD class='dataTDRight'><span ID=pctNull71 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_AIRPORT_ID>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div1AirportID Title='Airport%20ID%20of%20Diverted%20Airport%201.%20Airport%20ID%20is%20a%20Unique%20Key%20for%20an%20Airport'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div1AirportSeqID Value=DIV1_AIRPORT_SEQ_ID onclick='Try4(this);'> Div1AirportSeqID</TD><TD class='dataTD'>Airport Sequence ID of Diverted Airport 1. Unique Key for Time Specific Information for an Airport</TD><TD class='dataTDRight'><span ID=pctNull72 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_AIRPORT_SEQ_ID>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div1AirportSeqID Title='Airport%20Sequence%20ID%20of%20Diverted%20Airport%201.%20Unique%20Key%20for%20Time%20Specific%20Information%20for%20an%20Airport'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div1WheelsOn Value=DIV1_WHEELS_ON onclick='Try4(this);'> Div1WheelsOn</TD><TD class='dataTD'>Wheels On Time (local time: hhmm) at Diverted Airport Code1</TD><TD class='dataTDRight'><span ID=pctNull73 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div1WheelsOn Title='Wheels%20On%20Time%20%28local%20time%3A%20hhmm%29%20at%20Diverted%20Airport%20Code1'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div1TotalGTime Value=DIV1_TOTAL_GTIME onclick='Try4(this);'> Div1TotalGTime</TD><TD class='dataTD'>Total Ground Time Away from Gate at Diverted Airport Code1</TD><TD class='dataTDRight'><span ID=pctNull74 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div1TotalGTime Title='Total%20Ground%20Time%20Away%20from%20Gate%20at%20Diverted%20Airport%20Code1'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div1LongestGTime Value=DIV1_LONGEST_GTIME onclick='Try4(this);'> Div1LongestGTime</TD><TD class='dataTD'>Longest Ground Time Away from Gate at Diverted Airport Code1</TD><TD class='dataTDRight'><span ID=pctNull75 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div1LongestGTime Title='Longest%20Ground%20Time%20Away%20from%20Gate%20at%20Diverted%20Airport%20Code1'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div1WheelsOff Value=DIV1_WHEELS_OFF onclick='Try4(this);'> Div1WheelsOff</TD><TD class='dataTD'>Wheels Off Time (local time: hhmm) at Diverted Airport Code1</TD><TD class='dataTDRight'><span ID=pctNull76 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div1WheelsOff Title='Wheels%20Off%20Time%20%28local%20time%3A%20hhmm%29%20at%20Diverted%20Airport%20Code1'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div1TailNum Value=DIV1_TAIL_NUM onclick='Try4(this);'> Div1TailNum</TD><TD class='dataTD'>Aircraft Tail Number for Diverted Airport Code1</TD><TD class='dataTDRight'><span ID=pctNull77 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div1TailNum Title='Aircraft%20Tail%20Number%20for%20Diverted%20Airport%20Code1'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div2Airport Value=DIV2_AIRPORT onclick='Try4(this);'> Div2Airport</TD><TD class='dataTD'>Diverted Airport Code2</TD><TD class='dataTDRight'><span ID=pctNull78 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div2Airport Title='Diverted%20Airport%20Code2'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div2AirportID Value=DIV2_AIRPORT_ID onclick='Try4(this);'> Div2AirportID</TD><TD class='dataTD'>Airport ID of Diverted Airport 2. Airport ID is a Unique Key for an Airport</TD><TD class='dataTDRight'><span ID=pctNull79 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_AIRPORT_ID>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div2AirportID Title='Airport%20ID%20of%20Diverted%20Airport%202.%20Airport%20ID%20is%20a%20Unique%20Key%20for%20an%20Airport'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div2AirportSeqID Value=DIV2_AIRPORT_SEQ_ID onclick='Try4(this);'> Div2AirportSeqID</TD><TD class='dataTD'>Airport Sequence ID of Diverted Airport 2. Unique Key for Time Specific Information for an Airport</TD><TD class='dataTDRight'><span ID=pctNull80 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_AIRPORT_SEQ_ID>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div2AirportSeqID Title='Airport%20Sequence%20ID%20of%20Diverted%20Airport%202.%20Unique%20Key%20for%20Time%20Specific%20Information%20for%20an%20Airport'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div2WheelsOn Value=DIV2_WHEELS_ON onclick='Try4(this);'> Div2WheelsOn</TD><TD class='dataTD'>Wheels On Time (local time: hhmm) at Diverted Airport Code2</TD><TD class='dataTDRight'><span ID=pctNull81 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div2WheelsOn Title='Wheels%20On%20Time%20%28local%20time%3A%20hhmm%29%20at%20Diverted%20Airport%20Code2'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div2TotalGTime Value=DIV2_TOTAL_GTIME onclick='Try4(this);'> Div2TotalGTime</TD><TD class='dataTD'>Total Ground Time Away from Gate at Diverted Airport Code2</TD><TD class='dataTDRight'><span ID=pctNull82 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div2TotalGTime Title='Total%20Ground%20Time%20Away%20from%20Gate%20at%20Diverted%20Airport%20Code2'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div2LongestGTime Value=DIV2_LONGEST_GTIME onclick='Try4(this);'> Div2LongestGTime</TD><TD class='dataTD'>Longest Ground Time Away from Gate at Diverted Airport Code2</TD><TD class='dataTDRight'><span ID=pctNull83 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div2LongestGTime Title='Longest%20Ground%20Time%20Away%20from%20Gate%20at%20Diverted%20Airport%20Code2'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div2WheelsOff Value=DIV2_WHEELS_OFF onclick='Try4(this);'> Div2WheelsOff</TD><TD class='dataTD'>Wheels Off Time (local time: hhmm) at Diverted Airport Code2</TD><TD class='dataTDRight'><span ID=pctNull84 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div2WheelsOff Title='Wheels%20Off%20Time%20%28local%20time%3A%20hhmm%29%20at%20Diverted%20Airport%20Code2'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div2TailNum Value=DIV2_TAIL_NUM onclick='Try4(this);'> Div2TailNum</TD><TD class='dataTD'>Aircraft Tail Number for Diverted Airport Code2</TD><TD class='dataTDRight'><span ID=pctNull85 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div2TailNum Title='Aircraft%20Tail%20Number%20for%20Diverted%20Airport%20Code2'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div3Airport Value=DIV3_AIRPORT onclick='Try4(this);'> Div3Airport</TD><TD class='dataTD'>Diverted Airport Code3</TD><TD class='dataTDRight'><span ID=pctNull86 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div3Airport Title='Diverted%20Airport%20Code3'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div3AirportID Value=DIV3_AIRPORT_ID onclick='Try4(this);'> Div3AirportID</TD><TD class='dataTD'>Airport ID of Diverted Airport 3. Airport ID is a Unique Key for an Airport</TD><TD class='dataTDRight'><span ID=pctNull87 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_AIRPORT_ID>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div3AirportID Title='Airport%20ID%20of%20Diverted%20Airport%203.%20Airport%20ID%20is%20a%20Unique%20Key%20for%20an%20Airport'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div3AirportSeqID Value=DIV3_AIRPORT_SEQ_ID onclick='Try4(this);'> Div3AirportSeqID</TD><TD class='dataTD'>Airport Sequence ID of Diverted Airport 3. Unique Key for Time Specific Information for an Airport</TD><TD class='dataTDRight'><span ID=pctNull88 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_AIRPORT_SEQ_ID>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div3AirportSeqID Title='Airport%20Sequence%20ID%20of%20Diverted%20Airport%203.%20Unique%20Key%20for%20Time%20Specific%20Information%20for%20an%20Airport'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div3WheelsOn Value=DIV3_WHEELS_ON onclick='Try4(this);'> Div3WheelsOn</TD><TD class='dataTD'>Wheels On Time (local time: hhmm) at Diverted Airport Code3</TD><TD class='dataTDRight'><span ID=pctNull89 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div3WheelsOn Title='Wheels%20On%20Time%20%28local%20time%3A%20hhmm%29%20at%20Diverted%20Airport%20Code3'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div3TotalGTime Value=DIV3_TOTAL_GTIME onclick='Try4(this);'> Div3TotalGTime</TD><TD class='dataTD'>Total Ground Time Away from Gate at Diverted Airport Code3</TD><TD class='dataTDRight'><span ID=pctNull90 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div3TotalGTime Title='Total%20Ground%20Time%20Away%20from%20Gate%20at%20Diverted%20Airport%20Code3'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div3LongestGTime Value=DIV3_LONGEST_GTIME onclick='Try4(this);'> Div3LongestGTime</TD><TD class='dataTD'>Longest Ground Time Away from Gate at Diverted Airport Code3</TD><TD class='dataTDRight'><span ID=pctNull91 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div3LongestGTime Title='Longest%20Ground%20Time%20Away%20from%20Gate%20at%20Diverted%20Airport%20Code3'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div3WheelsOff Value=DIV3_WHEELS_OFF onclick='Try4(this);'> Div3WheelsOff</TD><TD class='dataTD'>Wheels Off Time (local time: hhmm) at Diverted Airport Code3</TD><TD class='dataTDRight'><span ID=pctNull92 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div3WheelsOff Title='Wheels%20Off%20Time%20%28local%20time%3A%20hhmm%29%20at%20Diverted%20Airport%20Code3'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div3TailNum Value=DIV3_TAIL_NUM onclick='Try4(this);'> Div3TailNum</TD><TD class='dataTD'>Aircraft Tail Number for Diverted Airport Code3</TD><TD class='dataTDRight'><span ID=pctNull93 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div3TailNum Title='Aircraft%20Tail%20Number%20for%20Diverted%20Airport%20Code3'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div4Airport Value=DIV4_AIRPORT onclick='Try4(this);'> Div4Airport</TD><TD class='dataTD'>Diverted Airport Code4</TD><TD class='dataTDRight'><span ID=pctNull94 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div4Airport Title='Diverted%20Airport%20Code4'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div4AirportID Value=DIV4_AIRPORT_ID onclick='Try4(this);'> Div4AirportID</TD><TD class='dataTD'>Airport ID of Diverted Airport 4. Airport ID is a Unique Key for an Airport</TD><TD class='dataTDRight'><span ID=pctNull95 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_AIRPORT_ID>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div4AirportID Title='Airport%20ID%20of%20Diverted%20Airport%204.%20Airport%20ID%20is%20a%20Unique%20Key%20for%20an%20Airport'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div4AirportSeqID Value=DIV4_AIRPORT_SEQ_ID onclick='Try4(this);'> Div4AirportSeqID</TD><TD class='dataTD'>Airport Sequence ID of Diverted Airport 4. Unique Key for Time Specific Information for an Airport</TD><TD class='dataTDRight'><span ID=pctNull96 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_AIRPORT_SEQ_ID>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div4AirportSeqID Title='Airport%20Sequence%20ID%20of%20Diverted%20Airport%204.%20Unique%20Key%20for%20Time%20Specific%20Information%20for%20an%20Airport'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div4WheelsOn Value=DIV4_WHEELS_ON onclick='Try4(this);'> Div4WheelsOn</TD><TD class='dataTD'>Wheels On Time (local time: hhmm) at Diverted Airport Code4</TD><TD class='dataTDRight'><span ID=pctNull97 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div4WheelsOn Title='Wheels%20On%20Time%20%28local%20time%3A%20hhmm%29%20at%20Diverted%20Airport%20Code4'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div4TotalGTime Value=DIV4_TOTAL_GTIME onclick='Try4(this);'> Div4TotalGTime</TD><TD class='dataTD'>Total Ground Time Away from Gate at Diverted Airport Code4</TD><TD class='dataTDRight'><span ID=pctNull98 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div4TotalGTime Title='Total%20Ground%20Time%20Away%20from%20Gate%20at%20Diverted%20Airport%20Code4'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div4LongestGTime Value=DIV4_LONGEST_GTIME onclick='Try4(this);'> Div4LongestGTime</TD><TD class='dataTD'>Longest Ground Time Away from Gate at Diverted Airport Code4</TD><TD class='dataTDRight'><span ID=pctNull99 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div4LongestGTime Title='Longest%20Ground%20Time%20Away%20from%20Gate%20at%20Diverted%20Airport%20Code4'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div4WheelsOff Value=DIV4_WHEELS_OFF onclick='Try4(this);'> Div4WheelsOff</TD><TD class='dataTD'>Wheels Off Time (local time: hhmm) at Diverted Airport Code4</TD><TD class='dataTDRight'><span ID=pctNull100 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div4WheelsOff Title='Wheels%20Off%20Time%20%28local%20time%3A%20hhmm%29%20at%20Diverted%20Airport%20Code4'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div4TailNum Value=DIV4_TAIL_NUM onclick='Try4(this);'> Div4TailNum</TD><TD class='dataTD'>Aircraft Tail Number for Diverted Airport Code4</TD><TD class='dataTDRight'><span ID=pctNull101 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div4TailNum Title='Aircraft%20Tail%20Number%20for%20Diverted%20Airport%20Code4'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div5Airport Value=DIV5_AIRPORT onclick='Try4(this);'> Div5Airport</TD><TD class='dataTD'>Diverted Airport Code5</TD><TD class='dataTDRight'><span ID=pctNull102 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div5Airport Title='Diverted%20Airport%20Code5'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div5AirportID Value=DIV5_AIRPORT_ID onclick='Try4(this);'> Div5AirportID</TD><TD class='dataTD'>Airport ID of Diverted Airport 5. Airport ID is a Unique Key for an Airport</TD><TD class='dataTDRight'><span ID=pctNull103 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_AIRPORT_ID>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div5AirportID Title='Airport%20ID%20of%20Diverted%20Airport%205.%20Airport%20ID%20is%20a%20Unique%20Key%20for%20an%20Airport'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div5AirportSeqID Value=DIV5_AIRPORT_SEQ_ID onclick='Try4(this);'> Div5AirportSeqID</TD><TD class='dataTD'>Airport Sequence ID of Diverted Airport 5. Unique Key for Time Specific Information for an Airport</TD><TD class='dataTDRight'><span ID=pctNull104 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'><a href=Download_Lookup.asp?Lookup=L_AIRPORT_SEQ_ID>Get Lookup Table</a></TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div5AirportSeqID Title='Airport%20Sequence%20ID%20of%20Diverted%20Airport%205.%20Unique%20Key%20for%20Time%20Specific%20Information%20for%20an%20Airport'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div5WheelsOn Value=DIV5_WHEELS_ON onclick='Try4(this);'> Div5WheelsOn</TD><TD class='dataTD'>Wheels On Time (local time: hhmm) at Diverted Airport Code5</TD><TD class='dataTDRight'><span ID=pctNull105 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div5WheelsOn Title='Wheels%20On%20Time%20%28local%20time%3A%20hhmm%29%20at%20Diverted%20Airport%20Code5'><INPUT TYPE=hidden name=VarType Value=Char><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div5TotalGTime Value=DIV5_TOTAL_GTIME onclick='Try4(this);'> Div5TotalGTime</TD><TD class='dataTD'>Total Ground Time Away from Gate at Diverted Airport Code5</TD><TD class='dataTDRight'><span ID=pctNull106 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div5TotalGTime Title='Total%20Ground%20Time%20Away%20from%20Gate%20at%20Diverted%20Airport%20Code5'><INPUT TYPE=hidden name=VarType Value=Num><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div5LongestGTime Value=DIV5_LONGEST_GTIME onclick='Try4(this);'> Div5LongestGTime</TD><TD class='dataTD'>Longest Ground Time Away from Gate at Diverted Airport Code5</TD><TD class='dataTDRight'><span ID=pctNull107 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div5LongestGTime Title='Longest%20Ground%20Time%20Away%20from%20Gate%20at%20Diverted%20Airport%20Code5'><INPUT TYPE=hidden name=VarType Value=Num><TR bgcolor=#efefef><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div5WheelsOff Value=DIV5_WHEELS_OFF onclick='Try4(this);'> Div5WheelsOff</TD><TD class='dataTD'>Wheels Off Time (local time: hhmm) at Diverted Airport Code5</TD><TD class='dataTDRight'><span ID=pctNull108 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div5WheelsOff Title='Wheels%20Off%20Time%20%28local%20time%3A%20hhmm%29%20at%20Diverted%20Airport%20Code5'><INPUT TYPE=hidden name=VarType Value=Char><TR><label for='VarName'></label><TD scope=row class='dataTD' nowrap><INPUT TYPE='checkbox' name='VarName' ID='VarName' Title=Div5TailNum Value=DIV5_TAIL_NUM onclick='Try4(this);'> Div5TailNum</TD><TD class='dataTD'>Aircraft Tail Number for Diverted Airport Code5</TD><TD class='dataTDRight'><span ID=pctNull109 style='visibility:hidden'>&gt;99.99</span></TD><TD class='dataTDRight'>&nbsp;</TD></TR><INPUT TYPE=hidden name=VarDesc Value=Div5TailNum Title='Aircraft%20Tail%20Number%20for%20Diverted%20Airport%20Code5'><INPUT TYPE=hidden name=VarType Value=Char></TABLE></FORM></TD></TR></TABLE><TABLE>  <!-- start footer -->
+
+  <div id="layout-type-2" class="footer-layout">
+    <div id="footer-wrapper">
+      <div id="footer">
+        <div class="region region-footer">
+          <div id="footer-block-block-1" class="footer-block footer-block-block">
+            <div class="footer-content">
+              <div id="footerContainer">
+                <div class="footerblack">
+                  <a href="http://www.rita.dot.gov/">Office of the Assistant Secretary
+                  for Research and Technology (OST-R)</a> &bull; <a href=
+                  "http://www.dot.gov/">U.S. Department of Transportation (US DOT)</a>
+                </div>
+
+                <div class="footerblack">
+                  1200 New Jersey Avenue, SE &bull; Washington, DC 20590 &bull;
+                  800.853.1351 &bull; <a href="https://ntl.custhelp.com/app/ask">E-mail
+                  OST-R</a><br />
+                  <br />
+                  <a href="http://www.rita.dot.gov/accessibility.html">Accessibility</a>
+                  | <a href="http://www.rita.dot.gov/disclaimer.html">Disclaimer</a> |
+                  <a href="http://fastlane.dot.gov/">Fast Lane</a> | <a class="ext" href=
+                  "http://www.fedstats.gov/">FedStats</a> | <a href=
+                  "http://www.rita.dot.gov/freedom_of_information_act/">Freedom of
+                  Information Act</a> | <a href=
+                  "https://www.civilrights.dot.gov/report/no-fear-act">No FEAR Act</a> |
+                  <a href="http://www.oig.dot.gov/Hotline">OIG Hotline</a> | <a href=
+                  "http://www.rita.dot.gov/privacy.html">Privacy Policy</a> | <a class=
+                  "ext" title="You are leaving DOT" href=
+                  "http://www.usa.gov/">USA.gov</a> | <a class="ext" title=
+                  "You are leaving DOT" href="http://www.whitehouse.gov/">White House</a>
+                </div><br />
+
+                <div class="footerblack">
+                  Plug-ins: <a class="ext" title="You are leaving DOT" href=
+                  "http://www.adobe.com/products/acrobat/readstep2_allversions.html">PDF
+                  Reader</a> | <a class="ext" title="You are leaving DOT" href=
+                  "http://www.macromedia.com/shockwave/download/alternates/">Flash
+                  Player</a> | <a class="ext" title="You are leaving DOT" href=
+                  "http://www.microsoft.com/downloads/details.aspx?FamilyID=1cd6acf9-ce06-4e1c-8dcf-f33f669dbc3a&amp;DisplayLang=en">
+                  Excel Viewer</a> | <a class="ext" title="You are leaving DOT" href=
+                  "http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=048dc840-14e1-467d-8dca-19d2a8fd7485">
+                  PowerPoint Viewer</a> | <a class="ext" title="You are leaving DOT"
+                  href="http://www.microsoft.com/downloads/details.aspx?FamilyID=3657CE88-7CFA-457A-9AEC-F4F827F20CAC&amp;DisplayLang=en">
+                  Word Viewer</a> | <a class="ext" title="You are leaving DOT" href=
+                  "http://www.winzip.com/prodpagewz.htm">WinZip</a>
+                </div><br />
+
+                <div class="footerblacksmall">
+                  OST-R's privacy policies and procedures do not necessarily apply to
+                  external web sites. We suggest contacting these sites directly for
+                  information on their data collection and distribution policies.
+                </div>
+              </div>
+
+              <p>&nbsp;</p>
+            </div><!-- end block content -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- end footer -->
+
+<Script language="JavaScript">
+	var x=0;
+	if (x>0)
+		{alert('No records in this table match your query. Please Try Again.');}
+</Script>
+</body>
+<script language="JavaScript">
+function tryDownload()
+{
+	var x;
+	var varcount=0;
+	var problems=0;
+	var varstr="";
+	var varlist="";
+	var varstrX="";
+	var sqlstr="";
+		
+	//Added 11/01/11
+	var SWService=0;
+
+	if (0 == 0)
+	{
+		x = document.form1.VarName.length;
+		var j=0;
+		for (var i=0; i < x; i++)
+		{
+			j=i;
+			if (document.form1.VarName[j].checked)
+			{
+				if (varstr<="")
+				{
+					varlist=document.form1.VarName[j].title;
+					varstr=document.form1.VarName[j].value;
+					varstr2= document.form1.VarName[j].value;
+				}
+				else
+				{
+					varstr=varstr + ',' + document.form1.VarName[j].value;
+					varlist=varlist + ',' + document.form1.VarName[j].title;
+					varstr2=varstr2 + ',' + document.form1.VarName[j].value;
+				}
+				varcount=varcount+1;
+				
+				//Added 11/01/11
+				if (document.form1.VarName[j].value=='SERVICE_CLASS')
+				{
+					SWService=1;
+				}
+			}
+		}
+	
+		if (varcount<=0)
+		{
+			problems=1;
+			alert("You have not selected any variables. Please try again");
+		}
+	}
+	else
+	{
+		if (document.form1.VarName.checked)
+		{
+			if (varstr<="")
+			{
+				varlist=document.form1.VarName.title;
+				varstr=document.form1.VarName.value;
+				varstr2= document.form1.VarName.value;
+			}
+			else
+			{
+				varstr=varstr + ',' + document.form1.VarName.value;
+				varlist=varlist + ',' + document.form1.VarName.title;
+				varstr2=varstr2 + ',' + document.form1.VarName.value;
+			}
+		}
+		else
+		{
+			problems=1;
+			alert("You have not selected any variables. Please try again");
+		}
+		
+	}
+	var geovalue=document.form1.GEOGRAPHY.options[document.form1.GEOGRAPHY.selectedIndex].value;
+	var timevalue=document.form1.FREQUENCY.options[document.form1.FREQUENCY.selectedIndex].value;
+	var yearvalue=document.form1.XYEAR.options[document.form1.XYEAR.selectedIndex].value;
+	var geotext=document.form1.GEOGRAPHY.options[document.form1.GEOGRAPHY.selectedIndex].text;
+	var timetext=document.form1.FREQUENCY.options[document.form1.FREQUENCY.selectedIndex].text;
+	var wheregeo="";
+	var wheretime="";
+
+	if (geovalue=="All")
+	{
+		wheregeo="";
+	}
+	else
+	{
+		if (2==1)
+		{
+			wheregeo=" WHERE ( ORIGIN_STATE_NM ='" + geotext + "' )  ";
+		}
+		else if (2==2)
+		{
+			wheregeo=" WHERE ( DEST_STATE_NM='" + geotext + "' OR ORIGIN_STATE_NM ='" + geotext + "' ) ";
+		}
+	}
+
+	if (timevalue=="All")
+	{
+		wheretime="";
+	}
+	else
+	{
+		if (wheregeo=="")
+		{
+			wheretime=" WHERE Month =" + timevalue ;
+		}
+		else
+		{
+			wheretime=" AND Month =" + timevalue ;
+		}
+	}
+	if (yearvalue=="All")
+	{
+		whereyear="";
+	}
+	else
+	{
+		if ((wheretime=="") && (wheregeo==""))
+		{
+			whereyear=" WHERE YEAR=" + document.form1.XYEAR.options[document.form1.XYEAR.selectedIndex].text;
+		}
+		else
+		{
+	 		whereyear=" AND YEAR=" + document.form1.XYEAR.options[document.form1.XYEAR.selectedIndex].text;
+		}
+	}
+	if (problems<=0)
+	{
+		//sqlstr=" SELECT " + varstr2 + " FROM  " + document.form1.RawDataTable.value +  wheregeo + wheretime + whereyear ;
+		if ((236 == 264) || (236 == 254))  //Schedule T1 & T2
+		{
+			if (SWService==1)    // SERVICE_CLASS selected
+			{
+				if (236 == 254)  // T2
+				{
+					//var mystr = "wheregeo ==> " + wheregeo.length + ", wheretime ==> " + wheretime.length + ", whereyear ==> " + whereyear.length ;
+					//alert(mystr);
+					if ((wheregeo.length==0) && (wheretime.length==0) && (whereyear.length==0))
+					{
+						sqlstr=" SELECT " + varstr2 + " FROM  " + document.form1.RawDataTable.value + " WHERE Service_Class NOT IN ('K', 'V')";
+						//alert("*cond 1==> " + sqlstr);
+					}
+					else
+					{
+						sqlstr=" SELECT " + varstr2 + " FROM  " + document.form1.RawDataTable.value +  wheregeo + wheretime + whereyear + " AND Service_Class NOT IN ('K', 'V')";
+						//alert("**cond 2==> " + sqlstr);
+					}
+				}
+				else  // T1
+				{
+					//var mystr2 = "wheregeo ==> " + wheregeo.length + ", wheretime ==> " + wheretime.length + ", whereyear ==> " + whereyear.length ;
+					//alert(mystr2);
+					if ((wheregeo.length==0) && (wheretime.length==0) && (whereyear.length==0))
+					{
+						sqlstr=" SELECT " + varstr2 + " FROM  " + document.form1.RawDataTable.value +  " WHERE  Service_Class NOT IN ('K', 'V' , 'Z')";
+						//alert("*cond 1==> " + sqlstr);
+					}
+					else
+					{
+						sqlstr=" SELECT " + varstr2 + " FROM  " + document.form1.RawDataTable.value +  wheregeo + wheretime + whereyear + "  AND Service_Class NOT IN ('K', 'V' , 'Z')";
+						//alert("**cond 2==> " + sqlstr);
+					}
+				}
+				//alert(sqlstr);
+			}
+			else
+			{
+				sqlstr=" SELECT " + varstr2 + " FROM  " + document.form1.RawDataTable.value +  wheregeo + wheretime + whereyear ;
+			}
+		}
+		else
+		{
+			sqlstr=" SELECT " + varstr2 + " FROM  " + document.form1.RawDataTable.value +  wheregeo + wheretime + whereyear ;
+		}
+		document.form1.sqlstr.value=sqlstr;
+		document.form1.geo.value=document.form1.GEOGRAPHY.options[document.form1.GEOGRAPHY.selectedIndex].text;
+		document.form1.time.value=document.form1.FREQUENCY.options[document.form1.FREQUENCY.selectedIndex].text;
+		document.form1.varlist.value=varstr;
+
+		document.form1.submit();
+	}
+	else
+	{
+		document.form1.reset();
+	}
+}
+function tryDownload2()
+{
+	var timevalue=document.form1.FREQUENCY.options[document.form1.FREQUENCY.selectedIndex].value;
+	var yearvalue=document.form1.XYEAR.options[document.form1.XYEAR.selectedIndex].value;
+	var db_short_name=document.form1.DBShortName.value;
+	var table_name=document.form1.UserTableName.value;
+	var zip_filename = db_short_name + "_" + table_name + "_"  + yearvalue + "_" + timevalue + ".zip";
+	if ((yearvalue==2015) && (timevalue > 12))
+	{
+		alert("Requested data do not exist.");
+	}
+	else
+	{
+		//location.replace("/Download/"+zip_filename);
+		//location.replace("http://tsdata-test.dot.gov/PREZIP/"  +zip_filename);
+	
+		var server = window.location.hostname;
+		var DL_URL="";
+		
+		if (server.toUpperCase() == "TRANSTATS-DEV.DOT.GOV")
+		{
+			DL_URL = "http://tsdata-dev.dot.gov";		
+		}
+		else if (server.toUpperCase() == "TRANSTATS-TEST.DOT.GOV")
+		{
+			DL_URL = "http://tsdata-test.dot.gov";
+		}
+		else if (server.toUpperCase() == "WWW.TRANSTATS.BTS.GOV")
+		{
+			DL_URL = "http://tsdata.bts.gov";
+		}
+		location.replace( DL_URL + "/PREZIP/"  + zip_filename);
+		
+
+	}
+
+}
+function tryDownload3()
+{
+	var varcount=0;
+	var problems=0;
+	var varstr="";
+	var vString=document.form1.GroupName[0].value;
+	var check=vString.charAt(vString.length-1);
+	
+	if (check==0)
+	{
+		alert("You have not selected any ID variables and won't be able to use the data. Please try again.");
+	}
+	else if (document.form1.MergeSub.checked && document.form1.AllGroups.checked && document.form1.filter2.title.length>0)
+	{
+		msg="You may have selected more than 2000 variables for one table. " +
+					"The table is too wide. " +
+					"Please deselect Merge data groups and try again.";
+		alert(msg);
+	}
+	else
+	{
+		var x=document.form1.GroupName.length;
+		if (document.form1.MergeSub.checked)
+		{
+			for (var i=0; i<x; i++)
+			{
+				vString=document.form1.GroupName[i].value;
+				check=vString.charAt(vString.length-1);
+				var groupName=vString.substring(0,vString.length-1);
+				var boxName=vString.substring(0,vString.length-1);
+				if (check>1)
+				{
+					if (document.form1[boxName])
+					{
+						var y = document.form1[boxName].length;
+						if (y)
+						{
+							for (var j=0;j<y;j++)
+							{
+								if (document.form1[boxName][j].checked)
+								{
+									if (varstr<="")
+									{
+										varstr=document.form1[boxName][j].value;
+									}
+									else
+									{
+										varstr=varstr + ',' + document.form1[boxName][j].value;
+									}
+									if (i>0)
+									{
+										varcount=varcount+1;
+									}
+								}
+							}
+						}
+						else
+						{
+							if (document.form1[boxName].checked)
+							{
+								if (varstr<="")
+								{
+									varstr=document.form1[boxName].value;
+								}
+								else
+								{
+									varstr=varstr + ',' + document.form1[boxName].value;
+								}
+								varcount=varcount+1;
+							}
+						}
+					}
+					else
+					{
+						if (varstr<="")
+						{
+							varstr=groupName;
+						}
+						else
+						{
+							varstr=varstr + ',' + groupName;
+						}
+						if (i>0)
+						{
+							varcount=varcount+1;
+						}
+					}
+				}
+				else if (check==1)
+				{
+					if (document.form1[boxName])
+					{
+						var y = document.form1[boxName].length;
+						if (y)
+						{
+							for (var j=0;j<y;j++)
+							{
+								if (varstr<="")
+								{
+									varstr=document.form1[boxName][j].value;
+								}
+								else
+								{
+									varstr=varstr + ',' + document.form1[boxName][j].value;
+								}
+								if (i>0)
+								{
+									varcount=varcount+1;
+								}
+							}
+						}
+						else
+						{
+							if (varstr<="")
+							{
+								varstr=document.form1[boxName].value;
+							}
+							else
+							{
+								varstr=varstr + ',' + document.form1[boxName].value;
+							}
+							varcount=varcount+1;
+						}
+					}
+					else
+					{
+						if (varstr<="")
+						{
+							varstr=groupName;
+						}
+						else
+						{
+							varstr=varstr + ',' + groupName;
+						}
+						if (i>0)
+						{
+							varcount=varcount+1;
+						}
+					}
+				}
+			}
+			if (varcount<=0)
+			{
+				if (confirm("You have only selected ID variables. Do you want to continue?"))
+				{
+					document.form1.sqlstr.value=1;
+					document.form1.varlist.value=varstr;
+					//alert(varstr);
+					document.form1.submit();
+				}
+			}
+			else if (varcount>2000)
+			{
+				msg="You have selected more than 2000 variables for one table. " +
+					"The table is too wide. " +
+					"Please deselect Merge data groups and try again.";
+				alert(msg);
+			}
+			else
+			{
+
+				if (document.form1.SUMLEVEL){
+					document.form1.sqlstr.value=1;
+					document.form1.geo.value=document.form1.GEOGRAPHY.options[document.form1.GEOGRAPHY.selectedIndex].value;
+					document.form1.time.value=document.form1.FREQUENCY.options[document.form1.FREQUENCY.selectedIndex].text;
+					document.form1.varlist.value=varstr;
+					document.form1.submit();
+				}else{
+					var geovalue=document.form1.GEOGRAPHY.options[document.form1.GEOGRAPHY.selectedIndex].value;
+					var timevalue=document.form1.FREQUENCY.options[document.form1.FREQUENCY.selectedIndex].value;
+					var yearvalue=document.form1.XYEAR.options[document.form1.XYEAR.selectedIndex].value;
+					var geotext=document.form1.GEOGRAPHY.options[document.form1.GEOGRAPHY.selectedIndex].text;
+					var timetext=document.form1.FREQUENCY.options[document.form1.FREQUENCY.selectedIndex].text;
+					var wheregeo="";
+					var wheretime="";
+
+					if (geovalue=="All")
+					{
+						wheregeo="";
+					}
+					else
+					{
+						if (2==1)
+						{
+							wheregeo=" WHERE ( ORIGIN_STATE_NM ='" + geotext + "' )  ";
+						}
+						else if (2==2)
+						{
+							wheregeo=" WHERE ( DEST_STATE_NM='" + geotext + "' OR ORIGIN_STATE_NM ='" + geotext + "' ) ";
+						}
+					}
+
+				if (timevalue=="All")
+				{
+					wheretime="";
+				}
+				else
+				{
+					if (wheregeo=="")
+					{
+						wheretime=" WHERE Month =" + timevalue ;
+					}
+					else
+					{
+						wheretime=" AND Month =" + timevalue ;
+					}
+				}
+				if (yearvalue=="All")
+				{
+					whereyear="";
+				}
+				else
+				{
+					if ((wheretime=="") && (wheregeo==""))
+					{
+						whereyear=" WHERE YEAR=" + document.form1.XYEAR.options[document.form1.XYEAR.selectedIndex].text;
+					}
+					else
+					{
+				 		whereyear=" AND YEAR=" + document.form1.XYEAR.options[document.form1.XYEAR.selectedIndex].text;
+					}
+				}
+				if ((236 == 264) || (236 == 254))  // Schedule T1 & T2
+				{
+					if (236 == 254)  // T2
+					{
+						if ((wheregeo.length==0) && (wheretime.length==0) && (whereyear.length==0))
+						{
+							sqlstr=" SELECT " + varstr2 + " FROM  " + document.form1.RawDataTable.value + " WHERE Service_Class NOT IN ('K', 'V')";
+						}
+						else
+						{
+							sqlstr=" SELECT " + varstr2 + " FROM  " + document.form1.RawDataTable.value +  wheregeo + wheretime + whereyear + " AND Service_Class NOT IN ('K', 'V')";
+						}
+					}
+					else  // T1
+					{
+						if ((wheregeo.length==0) && (wheretime.length==0) && (whereyear.length==0))
+						{
+							sqlstr=" SELECT " + varstr2 + " FROM  " + document.form1.RawDataTable.value +  "  WHERE Service_Class NOT IN ('K', 'V' , 'Z')";
+						}
+						else
+						{
+							sqlstr=" SELECT " + varstr2 + " FROM  " + document.form1.RawDataTable.value +  wheregeo + wheretime + whereyear + " AND Service_Class NOT IN ('K', 'V' , 'Z')";
+						}
+					}
+					
+				}
+				else
+				{
+					sqlstr=" SELECT " + varstr + " FROM  " + document.form1.RawDataTable.value +  wheregeo + wheretime + whereyear ;
+				}
+				document.form1.sqlstr.value=sqlstr;
+				document.form1.geo.value=document.form1.GEOGRAPHY.options[document.form1.GEOGRAPHY.selectedIndex].value;
+				document.form1.time.value=document.form1.FREQUENCY.options[document.form1.FREQUENCY.selectedIndex].text;
+				document.form1.varlist.value=varstr;
+				//alert(sqlstr);
+				document.form1.submit();
+				}
+			}
+		}
+		else		//Separate data groups
+		{
+			var varstrAll="";
+			var groupstr="";
+			var vString=document.form1.GroupName[0].value;
+			var boxName=vString.substring(0,vString.length-1);      //Get group ID
+			var y = document.form1[boxName].length;
+			if (y)
+			{
+				for (var j=0;j<y;j++)
+				{
+					if ((document.form1.GroupName[0].checked)||(document.form1[boxName][j].checked))
+					{
+						varstrAll=varstrAll + document.form1[boxName][j].value + ",";
+					}
+				}
+			}
+			else
+			{
+				if ((document.form1.GroupName[0].checked)||(document.form1[boxName].checked))
+				{
+					varstrAll=varstrAll + document.form1[boxName].value + ",";
+				}
+			}
+
+			for (var i=1; i<x; i++)  //Add one group at a time
+			{
+				vString=document.form1.GroupName[i].value;
+				var boxName=vString.substring(0,vString.length-1);
+				check=vString.charAt(vString.length-1)
+				if (check>1)
+				{
+					varstr=varstr + varstrAll;
+					groupstr=groupstr + boxName + ";";
+					if (document.form1[boxName])
+					{
+						var y = document.form1[boxName].length;
+						if (y)
+						{
+							for (var j=0;j<y;j++)
+							{
+								if (document.form1[boxName][j].checked)
+								{
+									varstr=varstr +  document.form1[boxName][j].value + ",";
+									varcount=varcount+1;
+								}
+							}
+						}
+						else
+						{
+							if (document.form1[boxName].checked)
+							{
+								varstr=varstr +  document.form1[boxName].value + ",";
+								varcount=varcount+1;
+							}
+						}
+						varstr=varstr.substr(0,varstr.length-1) + ";";
+					}
+					else
+					{
+						varstr=varstr +  boxName + ";";
+						varcount=varcount+1;
+					}
+				}
+				else if (check==1)
+				{
+					varstr=varstr + varstrAll;
+					groupstr=groupstr + boxName + ";";
+					if (document.form1[boxName])
+					{
+						var y = document.form1[boxName].length;
+						if (y)
+						{
+							for (var j=0;j<y;j++)
+							{
+									varstr=varstr +  document.form1[boxName][j].value + ",";
+									varcount=varcount+1;
+							}
+						}
+						else
+						{
+							varstr=varstr +  document.form1[boxName].value + ",";
+							varcount=varcount+1;
+						}
+						varstr=varstr.substr(0,varstr.length-1) + ";";
+					}
+					else
+					{
+						varstr=varstr +  boxName + ";";
+						varcount=varcount+1;
+					}
+				}
+			}
+			document.form1.sqlstr.value=0;
+			document.form1.geo.value=document.form1.GEOGRAPHY.options[document.form1.GEOGRAPHY.selectedIndex].value;
+			document.form1.time.value=document.form1.FREQUENCY.options[document.form1.FREQUENCY.selectedIndex].text;
+			document.form1.varlist.value=varstr;
+			document.form1.grouplist.value=groupstr;
+			if (varcount==0)
+			{
+				if (confirm("You have only selected ID variables. Do you want to continue?"))
+				{
+					document.form1.sqlstr.value=1;
+					document.form1.varlist.value=varstrAll.substr(0,varstrAll.length-1);
+					//alert(varstrAll.substr(0,varstrAll.length-1));
+					document.form1.submit();
+				}
+			}
+			else
+			{
+				//alert(varstr);
+				document.form1.submit();
+			}
+
+		}
+	}
+}
+
+function Try2()
+{
+	var x;
+	x=document.form1.VarName.length;
+	var j=0;
+	if (document.form1.AllVars.checked)
+	{
+		for (var i=0; i < x; i++) { j=i; document.form1.VarName[j].checked=true; }
+	}
+	else
+	{
+		for (var i=0; i < x; i++) {
+			j=i;
+			if (document.form1.VarName[j].disabled==false)
+			{
+				document.form1.VarName[j].checked=false;
+			}
+		 }
+	}
+	return true;
+}
+
+function Try2_2()
+{
+	var x=document.form1.GroupName.length;
+	for (var i=0; i < x; i++)
+	{
+		var vString=document.form1.GroupName[i].value
+		if (document.form1.AllGroups.checked)
+		{
+			var n=1
+		}
+		else
+		{
+			var n=0
+		}
+		document.form1.GroupName[i].checked=document.form1.AllGroups.checked;
+		document.form1.GroupName[i].value=vString.substring(0,vString.length-1)+n;
+		boxName="D_" + vString.substring(0,vString.length-1);
+		if (document.getElementById(boxName))
+		{
+			document.getElementById(boxName).style.display="none";
+		}
+	}
+}
+
+function myreset()
+{
+	document.form1.reset();
+}
+function Try3(box)
+{
+	var x=document.form1.VarName.length;
+	if (box.checked)
+	{
+		document.form1.AllVars.checked=true;
+		document.form1.AllVars.disabled=true;
+		document.form1.Download.style.display="none";
+		document.form1.Download2.style.display="inline";
+		document.form1.document.checked=true;
+		document.form1.document.disabled=true;
+		document.form1.TermsDef.checked=false;
+		document.form1.TermsDef.disabled=true;
+		for (var i=0; i < x; i++)
+		{
+			document.form1.VarName[i].checked=true;
+			document.form1.VarName[i].disabled=true;
+			document.form1.GEOGRAPHY.disabled=true;
+		}
+
+	}else{
+		document.form1.AllVars.checked=false;
+		document.form1.AllVars.disabled=false;
+		document.form1.Download.style.display="inline";
+		document.form1.Download2.style.display="none";
+		document.form1.document.checked=false;
+		document.form1.document.disabled=false;
+		document.form1.TermsDef.disabled=false;
+		for (var i=0; i < x; i++)
+		{
+			document.form1.VarName[i].checked=false;
+			document.form1.VarName[i].disabled=false;
+			document.form1.GEOGRAPHY.disabled=false;
+		}
+	}
+}
+function Try4(box)
+{
+	//alert(box.name);
+	if (!box.checked)
+	{
+		document.form1.AllVars.checked=false;
+	}
+
+}
+
+function Try4_2(box)
+{
+	var boxName=box.value.substring(0,box.value.length-1);
+	if (box.checked)
+	{
+		box.value=boxName+1;
+	}
+	else
+	{
+		box.value=boxName+0;
+	}
+
+	if (document.form1[boxName])
+	{
+
+		var x=document.form1[boxName].length;
+		if (!box.checked)
+		{
+			document.form1.AllGroups.checked=false;
+			if (x)
+			{
+				for (var i=0; i < x; i++)
+				{
+					document.form1[boxName][i].checked=false;
+				}
+			}
+			else
+			{
+				document.form1[boxName].checked=false;
+			}
+		}
+		else
+		{
+			if (x)
+			{
+				for (var i=0; i < x; i++)
+				{
+					document.form1[boxName][i].checked=true;
+				}
+			}
+			else
+			{
+				document.form1[boxName].checked=true;
+			}
+			var y=document.form1.GroupName.length;
+			var allTrue=1;
+			for (j=0;j<y;j++)
+			{
+				if (document.form1.GroupName[j].checked==false)
+				{
+					allTrue=0;
+					break;
+				}
+			}
+			if (allTrue==1)
+			{
+				document.form1.AllGroups.checked=true;
+			}
+		}
+	}
+	return true;
+}
+
+function Try4_3(box)
+{
+	var i=box.title-1;
+	var boxName=box.id;
+	var x=document.form1[boxName].length;
+	var allFalse=1;
+	var allTrue=1;
+	vString=document.form1.GroupName[i].value
+	if (!box.checked)
+	{
+		document.form1.AllGroups.checked=false;
+		document.form1.GroupName[i].checked=false;
+		allTrue=0;
+		if (x)
+		{
+			for (j=0;j<x;j++)
+			{
+				if (document.form1[boxName][j].checked==true)
+				{
+					allFalse=0;
+					break;
+				}
+			}
+		}
+		else
+		{
+			if (document.form1[boxName].checked==true)
+			{
+				allFalse=0;
+			}
+		}
+	}
+	else
+	{
+		allFalse=0;
+		if (x)
+		{
+			for (j=0;j<x;j++)
+			{
+				if (document.form1[boxName][j].checked==false)
+				{
+					allTrue=0;
+					break;
+				}
+			}
+		}
+		else
+		{
+			if (document.form1[boxName].checked==false)
+			{
+				allTrue=0;
+			}
+		}
+	}
+	if (allFalse==1)
+	{
+		n=0;
+		document.form1.GroupName[i].checked=false;
+		if (navigator.appName.substring(0,8)=="Netscape")
+		{
+			document.form1.GroupName[i].style.backgroundColor="#ffffff";
+		}
+		else
+		{
+			document.form1.GroupName[i].indeterminate=false;
+		}
+	}
+	else if (allTrue==1)
+	{
+		n=1;
+		document.form1.GroupName[i].checked=true;
+		if (navigator.appName.substring(0,8)=="Netscape")
+		{
+			document.form1.GroupName[i].style.backgroundColor="#ffffff";
+		}
+		else
+		{
+			document.form1.GroupName[i].indeterminate=false;
+		}
+	}
+	else
+	{
+		n=2;
+		if (navigator.appName.substring(0,8)=="Netscape")
+		{
+			document.form1.GroupName[i].style.backgroundColor="#efefef";
+		}
+		else
+		{
+			document.form1.GroupName[i].indeterminate=true;
+		}
+	}
+	document.form1.GroupName[i].value=vString.substring(0,vString.length-1)+n;
+}
+
+function ex_col(obj)
+{
+	var labelName=obj.title;
+	var subName="D_" + labelName;
+	x=document.form1[labelName].length;
+	if (document.getElementById(subName))
+	{
+		if (document.getElementById(subName).style.display=="none")
+		{
+			document.getElementById(subName).style.display="";
+			obj.style.color="purple";
+		}
+		else
+		{
+			document.getElementById(subName).style.display="None";
+			obj.style.color="blue";
+		}
+		if (document.form1.AllGroups.checked)
+		{
+			if(x)
+			{
+				for (i=0;i<x;i++)
+				{
+					document.form1[labelName][i].checked=true;
+				}
+			}
+			else
+			{
+				document.form1[labelName].checked=true;
+			}
+		}
+		else
+		{
+			j=obj.htmlFor;
+			vString=document.form1.GroupName[j].value;
+			check=vString.charAt(vString.length-1);
+			if (x)
+			{
+				for (i=0;i<x;i++)
+				{
+					if (check==1)
+					{
+						document.form1[labelName][i].checked=true;
+					}
+					else if (check==0)
+					{
+						document.form1[labelName][i].checked=false;
+					}
+				}
+			}
+			else
+			{
+				if (check==1)
+				{
+					document.form1[labelName].checked=true;
+				}
+				else if (check==0)
+				{
+					document.form1[labelName].checked=false;
+				}
+			}
+		}
+	}
+}
+
+function shNull(dObj)
+{
+	N=128;
+
+	for (i=0;i<=N;i++)
+	{
+		shName="pctNull" + i;
+		if (dObj.checked==true)
+		{
+			document.getElementById(shName).style.visibility="visible";
+		}
+		else
+		{
+			document.getElementById(shName).style.visibility="hidden";
+		}
+	}
+}
+function changeRegion(selectBox)
+{	var selIndex = selectBox.selectedIndex;
+	var selText = selectBox.options[selIndex].value;
+	var tempstring=unescape(document.form1.sumRegion.value);
+	var sumRArray=tempstring.split(";");
+	with (document.form1.GEOGRAPHY)
+	{
+		options.length=0;
+		var opIndex=0;
+		for (var i = 0; i < sumRArray.length-1; i = i + 4)
+		{
+			if ((selText==sumRArray[i]) )
+			{
+				options[opIndex] = new Option(sumRArray[i+3],sumRArray[i+2]);
+				opIndex++;
+				last_item=sumRArray[i+3]
+			}
+
+		}
+
+		if (last_item!="Not Applicable")
+		{
+			var allText="All " + document.form1.filter2.title + "s";
+			options[opIndex]= new Option(allText,"All");
+		}
+
+	}
+}
+
+</script>
+</html>

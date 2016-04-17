@@ -27,7 +27,10 @@
 
 PRO get_gmorph_manga, sexcat, big_imfile, big_whtfile, big_segfile, outmorphs,big_xpix, big_ypix,im_psf,im_scale,zeropt ;,exptime
 
-directory_loc = '/user/mikepeth/manga/'
+;directory_loc = '/user/mikepeth/manga/'
+directory_loc = '/Users/mikepeth/Desktop/ps1mergers/'
+new_loc = '/astro/lotz/peth/ps1mergers/'
+
 ;********************************************************
 ; read files, initalize parameters
 ;*******************************************************
@@ -43,6 +46,7 @@ readcol, sexcat,  id,  ra, dec, xc, yc, xmin, xmax, ymin, ymax, mag, mager, clas
 ;Read in sky image and segmentation map
 big_im=mrdfits(big_imfile, 0,headerim)
 big_wht=mrdfits(big_whtfile, 0,headerwht)
+print, big_segfile
 big_segmap=mrdfits(big_segfile, 0,headerseg)
 
 ;Remove NaNs from sky image
@@ -59,7 +63,7 @@ if exptime eq 0 then exptime = 1.0 ;Incase the FITS file doesnt have an EXPTIME
 ; define galaxy structure
 G={ file:' ', npix:0, axc:0.0, ayc:0.0, mxc:0.0, myc:0.0, $
     e:0.0, pa:0.0, psf:im_psf, scale:im_scale, bkgnd:0.0, $
-    skybox:[0.0,0.0,0.0,0.0], exptime:exptime, display:display }
+    skybox:[0.0,0.0,0.0,0.0], exptime:exptime, display:display, segfile:' ', whtfile:' ' }
 
 big_ymin = 0
 big_ymax = big_ypix
@@ -102,26 +106,31 @@ while(i lt n) do begin
     ; initalize galaxy parameters
     ;**************************************
 
-   baseName = strsplit(big_imfile,"MaNGA",/EXTRACT,/REGEX)
-   bb = baseName[1]
-   ugcID = strsplit(bb,'_',/EXTRACT)
-   uid = ugcID[0]
-   print, ugcID
+   print, big_imfile
+   baseName = strsplit(big_imfile,".",/EXTRACT) ;,/REGEX)
+   print, baseName
+   bb = baseName[0]+'.'+baseName[1]
+   ;ugcID = strsplit(bb,'_',/EXTRACT)
+   ;uid = ugcID[0]
+   ;print, ugcID
+   uid = bb
    
     print, 'starting galaxy ', uid
 
 
     ; set galaxy file names
     
-    galfile = 'manga'+ string(uid) + '_sky.fits'
-    galwhtfile = 'manga'+ string(uid) + '_wht.fits'
-    galsegfile = 'manga'+ string(uid) + '_seg2.fits'
-    galseg1file = 'manga'+ string(uid) + '_seg1.fits'
+    galfile =     string(uid) + '_'+strtrim(string(i),1)+'_sky.fits'
+    galwhtfile =  string(uid) + '_'+strtrim(string(i),1)+'_wht.fits'
+    galsegfile =  string(uid) + '_'+strtrim(string(i),1)+'_seg2.fits'
+    galseg1file = string(uid) + '_'+strtrim(string(i),1)+'_seg1.fits'
 
 
     ; set galaxy structure values
     ;G.file = big_imfile ;galfile
     G.file = galfile
+    G.segfile = galsegfile
+    G.whtfile = galwhtfile
     ;G.exptime = exptime ;G.exptime = 1
     G.display = display
 
@@ -708,15 +717,15 @@ while(i lt n) do begin
 
            ; delete files
 
-           file_copy, galfile, directory_loc+galfile, /overwrite
-           file_copy, galwhtfile, directory_loc+galwhtfile, /overwrite
-           file_copy, galsegfile, directory_loc+galsegfile, /overwrite
-           file_copy, galseg1file, directory_loc+galseg1file, /overwrite
+           ; file_copy, galfile,    galfile, /overwrite
+           ; file_copy, galwhtfile, galwhtfile, /overwrite
+           ; file_copy, galsegfile, galsegfile, /overwrite
+           ; file_copy, galseg1file,galseg1file, /overwrite
             
-           file_delete, galfile, /allow_nonexistent
-           file_delete, galwhtfile, /allow_nonexistent
-           file_delete, galsegfile, /allow_nonexistent
-           file_delete, galseg1file, /allow_nonexistent
+           ; file_delete, galfile, /allow_nonexistent
+           ; file_delete, galwhtfile, /allow_nonexistent
+           ; file_delete, galsegfile, /allow_nonexistent
+           ; file_delete, galseg1file, /allow_nonexistent
            
            ;file_delete, galexpfile, /allow_nonexistent
 

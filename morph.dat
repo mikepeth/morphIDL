@@ -22,7 +22,7 @@ maglim = 26.0
 
 
 ; change these only if necessary
-dim = 50           ; minimum dx for postage stamp image
+dim = 200           ; minimum dx for postage stamp image
 skyboxsize = 20    ; min skybox size = xx by xx pixels
 dw=300             ; window size
 

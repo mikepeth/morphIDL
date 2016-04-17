@@ -38,9 +38,11 @@ if (size(rimg_nan, /DIMENSIONS) gt 1) then  galaxy_image[rimg_nan] = -99
 
 fileroot = strsplit(G.file, '_', /extract)
 ;print, fileroot
-;galaxy_wht = fileroot[0] + '.'+fileroot[1]+'.wt.fits'
-galaxy_wht = fileroot[0]+'_wht.fits'
-print, galaxy_wht
+;galaxy_wht = fileroot[0] + '.'+fileroot[1]+'_wt.fits'
+;galaxy_wht = fileroot[0]+'_g_wht.fits'
+;print, galaxy_wht
+
+galaxy_wht = G.whtfile
 galaxy_wht_image = mrdfits(galaxy_wht, 0)
 ;galaxy_exp = fileroot[0] + '_exp.fits'
 
@@ -53,9 +55,10 @@ galaxy_skybox = G.skybox
 galaxy_exptime = G.exptime
 galaxy_display = G.display
 
-root = strsplit(G.file, '_', /extract) ;
+;root = strsplit(G.file, '.', /extract) ;
 ;print, root
-segfile = root[0]+'_seg2.fits'
+;segfile = root[0]+'.'+root[1]+'_'+string(i)+'_seg2.fits'
+segfile = G.segfile
 ;mid_segfile = strjoin(root, '_MID_seg.')
 
 ; display galaxy image
